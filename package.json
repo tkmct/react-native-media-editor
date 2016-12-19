@@ -1,0 +1,15 @@
+
+{
+  "name": "react-native-media-editor",
+  "version": "0.0.1",
+  "description": "Media file editor for ReactNative",
+  "main": "MediaEditor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Takamichi-tsutsumi",
+  "license": "MIT"
+}
