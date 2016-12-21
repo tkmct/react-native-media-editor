@@ -13,36 +13,41 @@ import {
   Image,
   Button,
   Dimensions,
-  Platform
+  Platform,
+  ActivityIndicator
 } from 'react-native';
 import ImagePicker from 'react-native-image-picker';
 import RNMediaEditor from 'react-native-media-editor';
 
 
 var options = {
-  title: 'Select Avatar',
-  customButtons: [
-    {name: 'fb', title: 'Choose Photo from Facebook'},
-  ],
+  title: 'Select Image',
   storageOptions: {
     skipBackup: true,
     path: 'images'
   }
 };
 
-/**
-* The first arg is the options object for customization (it can also be null or omitted for default options),
-* The second arg is the callback which sends object: response (more info below in README)
-*/
+function toVerticalString(str) {
+  let verStr = '';
+  for (s of str) {
+    verStr += s + '\n';
+  }
+  return verStr;
+}
 
 export default class example extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      loading: false,
       photo: null,
       video: null,
-      text: 'Text embedded',
+      text: 'おはよう日本', // default
+      subText: 'おはよう日本',
+      fontSize: 60, // default
+      colorCode: '#ffffff',
     };
 
     this.onButtonPress = this.onButtonPress.bind(this);
@@ -50,13 +55,12 @@ export default class example extends Component {
     this.renderImage = this.renderImage.bind(this);
   }
 
-  componentWillMount() {
-    RNMediaEditor.echo("Hello RNMediaEditor");
-  }
-
   onButtonPress() {
-    RNMediaEditor.echo("Button pressed");
-    ImagePicker.showImagePicker(options, (response) => {
+    this.setState({
+      photo: null,
+      loading: true
+    });
+    ImagePicker.launchImageLibrary(options, (response) => {
       console.log('Response = ', response);
 
       if (response.didCancel) {
@@ -80,17 +84,17 @@ export default class example extends Component {
         }
 
         this.setState({
-          photo: source
+          photo: source,
+          loading: false,
         });
       }
     });
   }
 
   onEmbedButtonPress() {
-    const {text, photo} = this.state;
+    const {text, subText, photo, fontSize, colorCode} = this.state;
     if (photo) {
-      console.log(text, photo);
-      // RNMediaEditor.embedTextToImage(photo, text);
+      RNMediaEditor.addTextToImage(toVerticalString(text), photo, fontSize, colorCode);
     }
   }
 
@@ -102,6 +106,8 @@ export default class example extends Component {
           source={this.state.photo}
         />
       )
+    } else if (this.state.loading) {
+      return <ActivityIndicator />;
     } else {
       return;
     }

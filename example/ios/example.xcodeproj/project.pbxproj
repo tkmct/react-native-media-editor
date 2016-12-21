@@ -27,6 +27,9 @@
 		8C70F11ECE29475EAC6C895A /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B743FD78588D40C8A7DD455E /* libRNImagePicker.a */; };
 		D54274B81E09AA96003C0D0B /* libRNMediaEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D54274431E080B53003C0D0B /* libRNMediaEditor.a */; };
 		D58287981E0A79AD002FE91F /* libRCTCameraRoll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D58287861E0A7985002FE91F /* libRCTCameraRoll.a */; };
+		D58287C21E0ABC87002FE91F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58287C11E0ABC87002FE91F /* AVFoundation.framework */; };
+		D58287C41E0ABC93002FE91F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58287C31E0ABC93002FE91F /* UIKit.framework */; };
+		D58287C71E0ABCFA002FE91F /* UIImage+test.m in Sources */ = {isa = PBXBuildFile; fileRef = D58287C61E0ABCFA002FE91F /* UIImage+test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,6 +223,10 @@
 		948EA84F02A94807874B81E7 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNImagePicker.xcodeproj; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; };
 		B743FD78588D40C8A7DD455E /* libRNImagePicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNImagePicker.a; sourceTree = "<group>"; };
 		D582877E1E0A7985002FE91F /* RCTCameraRoll.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCameraRoll.xcodeproj; path = "../node_modules/react-native/Libraries/CameraRoll/RCTCameraRoll.xcodeproj"; sourceTree = "<group>"; };
+		D58287C11E0ABC87002FE91F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D58287C31E0ABC93002FE91F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D58287C51E0ABCFA002FE91F /* UIImage+test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+test.h"; sourceTree = "<group>"; };
+		D58287C61E0ABCFA002FE91F /* UIImage+test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+test.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +242,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58287C41E0ABC93002FE91F /* UIKit.framework in Frameworks */,
+				D58287C21E0ABC87002FE91F /* AVFoundation.framework in Frameworks */,
 				D58287981E0A79AD002FE91F /* libRCTCameraRoll.a in Frameworks */,
 				D54274B81E09AA96003C0D0B /* libRNMediaEditor.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -342,6 +351,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				D58287C51E0ABCFA002FE91F /* UIImage+test.h */,
+				D58287C61E0ABCFA002FE91F /* UIImage+test.m */,
 			);
 			name = example;
 			sourceTree = "<group>";
@@ -410,6 +421,7 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* exampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				D58287C01E0ABC87002FE91F /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -446,6 +458,15 @@
 				D58287BE1E0A7C72002FE91F /* libRNImagePicker.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D58287C01E0ABC87002FE91F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D58287C31E0ABC93002FE91F /* UIKit.framework */,
+				D58287C11E0ABC87002FE91F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -790,6 +811,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				D58287C71E0ABCFA002FE91F /* UIImage+test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
