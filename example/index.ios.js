@@ -10,7 +10,9 @@ import {
   StyleSheet,
   Text,
   View,
+  Image,
   Button,
+  Dimensions,
   Platform
 } from 'react-native';
 import ImagePicker from 'react-native-image-picker';
@@ -40,9 +42,12 @@ export default class example extends Component {
     this.state = {
       photo: null,
       video: null,
+      text: 'Text embedded',
     };
 
     this.onButtonPress = this.onButtonPress.bind(this);
+    this.onEmbedButtonPress = this.onEmbedButtonPress.bind(this);
+    this.renderImage = this.renderImage.bind(this);
   }
 
   componentWillMount() {
@@ -81,12 +86,38 @@ export default class example extends Component {
     });
   }
 
+  onEmbedButtonPress() {
+    const {text, photo} = this.state;
+    if (photo) {
+      console.log(text, photo);
+      // RNMediaEditor.embedTextToImage(photo, text);
+    }
+  }
+
+  renderImage() {
+    if (this.state.photo) {
+      return (
+        <Image
+          style={styles.image}
+          source={this.state.photo}
+        />
+      )
+    } else {
+      return;
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
+        { this.renderImage() }
         <Button
           onPress={this.onButtonPress}
           title="Pick Image"
+        />
+        <Button
+          onPress={this.onEmbedButtonPress}
+          title="Embed Text"
         />
       </View>
     );
@@ -100,16 +131,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  image: {
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height/2,
+  }
 });
 
 AppRegistry.registerComponent('example', () => example);
