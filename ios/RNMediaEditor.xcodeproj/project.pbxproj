@@ -203,8 +203,8 @@
 					"$(SRCROOT)/../../../Libraries/**",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/**",
-					"/Users/takamichi/.ghq/github.com/Takamichi-tsutsumi/react-native-media-editor/example/node_modules/react-native/React/**",
-					"/Users/takamichi/.ghq/github.com/Takamichi-tsutsumi/react-native-media-editor/example/node_modules/react-native/Libraries/**",
+					"/Users/takamichi/Development/ghq/github.com/Takamichi-tsutsumi/react-native-media-editor/example/node_modules/react-native/React/**",
+					"/Users/takamichi/Development/ghq/github.com/Takamichi-tsutsumi/react-native-media-editor/example/node_modules/react-native/Libraries/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -223,8 +223,8 @@
 					"$(SRCROOT)/../../../Libraries/**",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/**",
-					"/Users/takamichi/.ghq/github.com/Takamichi-tsutsumi/react-native-media-editor/example/node_modules/react-native/React/**",
-					"/Users/takamichi/.ghq/github.com/Takamichi-tsutsumi/react-native-media-editor/example/node_modules/react-native/Libraries/**",
+					"/Users/takamichi/Development/ghq/github.com/Takamichi-tsutsumi/react-native-media-editor/example/node_modules/react-native/React/**",
+					"/Users/takamichi/Development/ghq/github.com/Takamichi-tsutsumi/react-native-media-editor/example/node_modules/react-native/Libraries/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
