@@ -9,5 +9,12 @@
 }
 RCT_EXPORT_MODULE()
 
+RCT_EXPORT_METHOD(hello:(NSString *)name)
+{
+  NSLog(@"Hello %@", name);
+}
+
+
+
 @end
-  
+

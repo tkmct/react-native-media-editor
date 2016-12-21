@@ -11,5 +11,11 @@
     "react-native"
   ],
   "author": "Takamichi-tsutsumi",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.38.0"
+  },
+  "dependencies": {
+    "react-native": "^0.38.0"
+  }
 }

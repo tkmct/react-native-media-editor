@@ -11,8 +11,13 @@ import {
   Text,
   View
 } from 'react-native';
+import RNMediaEditor from 'react-native-media-editor';
 
 export default class example extends Component {
+  componentWillMount() {
+    RNMediaEditor.hello("Takamichi");
+  }
+
   render() {
     return (
       <View style={styles.container}>
