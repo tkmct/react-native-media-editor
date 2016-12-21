@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "react": "15.4.1",
-    "react-native": "0.39.2",
+    "react-native": "^0.39.2",
     "react-native-media-editor": "file:../"
   },
   "devDependencies": {

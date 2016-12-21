@@ -9,12 +9,9 @@
 }
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(hello:(NSString *)name)
+RCT_EXPORT_METHOD(echo:(NSString *)text)
 {
-  NSLog(@"Hello %@", name);
+  NSLog(@"RNMediaEditor.Echo: %@", text);
 }
 
-
-
 @end
-

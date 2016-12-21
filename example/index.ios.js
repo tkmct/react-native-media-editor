@@ -15,7 +15,7 @@ import RNMediaEditor from 'react-native-media-editor';
 
 export default class example extends Component {
   componentWillMount() {
-    RNMediaEditor.hello("Takamichi");
+    RNMediaEditor.echo("Hello RNMediaEditor");
   }
 
   render() {
