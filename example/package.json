@@ -9,6 +9,7 @@
   "dependencies": {
     "react": "15.4.1",
     "react-native": "^0.39.2",
+    "react-native-image-picker": "^0.24.1",
     "react-native-media-editor": "file:../"
   },
   "devDependencies": {
