@@ -14,7 +14,8 @@ import {
   Button,
   Dimensions,
   Platform,
-  ActivityIndicator
+  ActivityIndicator,
+  TextInput
 } from 'react-native';
 import ImagePicker from 'react-native-image-picker';
 import RNMediaEditor from 'react-native-media-editor';
@@ -44,15 +45,15 @@ export default class example extends Component {
       loading: false,
       photo: null,
       video: null,
-      text: 'おはよう日本', // default
-      subText: 'おはよう日本',
-      fontSize: 60, // default
+      text: '',
+      fontSize: 20,
       colorCode: '#ffffff',
     };
 
     this.onButtonPress = this.onButtonPress.bind(this);
     this.onEmbedButtonPress = this.onEmbedButtonPress.bind(this);
     this.renderImage = this.renderImage.bind(this);
+    this.renderInput = this.renderInput.bind(this);
   }
 
   onButtonPress() {
@@ -113,6 +114,38 @@ export default class example extends Component {
     }
   }
 
+  renderInput() {
+    return (
+      <View>
+        <View>
+          <Text style={styles.labelText}>Text</Text>
+          <TextInput
+            style={styles.input}
+            onChangeText={(text) => this.setState({text})}
+            value={this.state.text}
+          />
+        </View>
+        <View>
+          <Text>Font Size</Text>
+          <TextInput
+            style={styles.input}
+            onChangeText={(fontSize) => this.setState({fontSize: Number(fontSize)})}
+            keyboardType="number-pad"
+            value={String(this.state.fontSize)}
+          />
+        </View>
+        <View>
+          <Text>Color</Text>
+          <TextInput
+            style={styles.input}
+            onChangeText={(colorCode) => this.setState({colorCode})}
+            value={this.state.colorCode}
+          />
+        </View>
+      </View>
+    )
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -125,6 +158,7 @@ export default class example extends Component {
           onPress={this.onEmbedButtonPress}
           title="Embed Text"
         />
+        { this.renderInput() }
       </View>
     );
   }
@@ -140,7 +174,15 @@ const styles = StyleSheet.create({
   image: {
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').height/2,
-  }
+  },
+  input: {
+    height: 20,
+    borderWidth: 0.5,
+    borderColor: '#0f0f0f',
+    borderRadius: 5,
+    fontSize: 14,
+    padding: 4,
+  },
 });
 
 AppRegistry.registerComponent('example', () => example);

@@ -29,7 +29,6 @@
 		D58287981E0A79AD002FE91F /* libRCTCameraRoll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D58287861E0A7985002FE91F /* libRCTCameraRoll.a */; };
 		D58287C21E0ABC87002FE91F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58287C11E0ABC87002FE91F /* AVFoundation.framework */; };
 		D58287C41E0ABC93002FE91F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58287C31E0ABC93002FE91F /* UIKit.framework */; };
-		D58287C71E0ABCFA002FE91F /* UIImage+test.m in Sources */ = {isa = PBXBuildFile; fileRef = D58287C61E0ABCFA002FE91F /* UIImage+test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,8 +224,6 @@
 		D582877E1E0A7985002FE91F /* RCTCameraRoll.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCameraRoll.xcodeproj; path = "../node_modules/react-native/Libraries/CameraRoll/RCTCameraRoll.xcodeproj"; sourceTree = "<group>"; };
 		D58287C11E0ABC87002FE91F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D58287C31E0ABC93002FE91F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D58287C51E0ABCFA002FE91F /* UIImage+test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+test.h"; sourceTree = "<group>"; };
-		D58287C61E0ABCFA002FE91F /* UIImage+test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+test.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,8 +348,6 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				D58287C51E0ABCFA002FE91F /* UIImage+test.h */,
-				D58287C61E0ABCFA002FE91F /* UIImage+test.m */,
 			);
 			name = example;
 			sourceTree = "<group>";
@@ -811,7 +806,6 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				D58287C71E0ABCFA002FE91F /* UIImage+test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
