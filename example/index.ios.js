@@ -91,7 +91,8 @@ export default class example extends Component {
   onEmbedButtonPress() {
     const {text, subText, photo, fontSize, colorCode} = this.state;
     if (photo) {
-      RNMediaEditor.addTextToImage(toVerticalString(text), photo, fontSize, colorCode);
+      // RNMediaEditor.addTextToImage(toVerticalString(text), photo, fontSize, colorCode);
+      RNMediaEditor.embedTextOnImage(text, photo, fontSize, colorCode, 200, 20);
     }
   }
 
