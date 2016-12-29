@@ -24,7 +24,8 @@ RCT_EXPORT_MODULE()
 - (UIImage *) drawText:(NSString *) text
               inImage:(UIImage *) image
               FontSize:(NSInteger)fontSize
-              ColorCode:(NSString *)color
+              textColor:(NSString *)textColor
+              backgroundColor:(NSString *)backgroundColor
               X:(NSInteger) x
               Y:(NSInteger) y
 {
@@ -33,12 +34,12 @@ RCT_EXPORT_MODULE()
   UIGraphicsBeginImageContext(image.size);
   [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
   CGRect rect = CGRectMake(point.x, point.y, image.size.width, image.size.height);
-  [[UIColor brownColor] set];
+  [[self colorFromHexString:backgroundColor] set];
   CGContextFillRect(
     UIGraphicsGetCurrentContext(),
     CGRectMake(point.x, point.y,
     image.size.width, fontSize)); // TODO fontsize => 決められるように
-  [[self colorFromHexString:color] set];
+  [[self colorFromHexString:textColor] set];
   [text drawInRect:CGRectIntegral(rect)
     withFont:font
     lineBreakMode:UILineBreakModeTailTruncation
@@ -50,9 +51,9 @@ RCT_EXPORT_MODULE()
   return newImage;
 }
 
-RCT_EXPORT_METHOD(embedTextOnImage:(NSString *)text :(UIImage *)img :(NSInteger *)fontSize :(NSString *)colorCode :(NSInteger *)x :(NSInteger *)y)
+RCT_EXPORT_METHOD(embedTextOnImage:(NSString *)text :(UIImage *)img :(NSInteger *)fontSize :(NSString *)colorCode :(NSString *)backgroundColor :(NSInteger *)x :(NSInteger *)y)
 {
-    [self drawText:text inImage:img FontSize:fontSize ColorCode:colorCode X:x Y:y];
+    [self drawText:text inImage:img FontSize:fontSize textColor:colorCode backgroundColor:backgroundColor X:x Y:y];
 }
 
 @end

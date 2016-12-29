@@ -44,6 +44,7 @@ export default class example extends Component {
       text: '',
       fontSize: 20,
       colorCode: '#ffffff',
+      textBackgroundColor: '#fef000'
     };
 
     this.onButtonPress = this.onButtonPress.bind(this);
@@ -89,10 +90,10 @@ export default class example extends Component {
   }
 
   onEmbedButtonPress() {
-    const {text, subText, photo, fontSize, colorCode} = this.state;
+    const {text, subText, photo, fontSize, colorCode, textBackgroundColor} = this.state;
     if (photo) {
       // RNMediaEditor.addTextToImage(toVerticalString(text), photo, fontSize, colorCode);
-      RNMediaEditor.embedTextOnImage(text, photo, fontSize, colorCode, 200, 20);
+      RNMediaEditor.embedTextOnImage(text, photo, fontSize, colorCode, textBackgroundColor, 200, 20);
     }
   }
 
@@ -146,15 +147,17 @@ export default class example extends Component {
   render() {
     return (
       <View style={styles.container}>
-        { this.renderImage() }
-        <Button
-          onPress={this.onButtonPress}
-          title="Pick Image"
-        />
-        <Button
-          onPress={this.onEmbedButtonPress}
-          title="Embed Text"
-        />
+        <View >
+          <Button
+            onPress={this.onButtonPress}
+            title="Pick Image"
+          />
+          <Button
+            onPress={this.onEmbedButtonPress}
+            title="Embed Text"
+          />
+          { this.renderImage() }
+        </View>
         { this.renderInput() }
       </View>
     );
@@ -164,7 +167,6 @@ export default class example extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
@@ -174,6 +176,7 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 20,
+    width: 200,
     borderWidth: 0.5,
     borderColor: '#0f0f0f',
     borderRadius: 5,
