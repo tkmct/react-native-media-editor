@@ -1,5 +1,6 @@
 #import "RNMediaEditor.h"
-
+#import <AVFoundation/AVFoundation.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @implementation RNMediaEditor
 
@@ -51,9 +52,98 @@ RCT_EXPORT_MODULE()
   return newImage;
 }
 
+- (void)AddTextOnVideo:(NSURL *)videoPath
+                  text:(NSString *)text
+              fontSize:(NSInteger)fontSize
+{
+    AVURLAsset *videoAsset = [[AVURLAsset alloc] initWithURL:videoPath options:nil];
+    
+    AVMutableComposition* mixComposition = [AVMutableComposition composition];
+    AVMutableCompositionTrack *compositionVideoTrack =
+    [mixComposition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
+    
+    AVAssetTrack *videoTrack = [[videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
+    
+    [compositionVideoTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, videoAsset.duration) ofTrack:videoTrack atTime:kCMTimeZero error:nil];
+    [compositionVideoTrack setPreferredTransform:[[[videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0] preferredTransform]];
+    
+    // Create text layer
+    CGSize videoSize = videoTrack.naturalSize;
+    // TODO size
+    CATextLayer *textLayer = [CATextLayer layer];
+    textLayer.string = text;
+    textLayer.fontSize = videoSize.height / 6;
+    textLayer.shadowOpacity = 0.5;
+    textLayer.alignmentMode = kCAAlignmentCenter;
+    textLayer.bounds = CGRectMake(0, 0, videoSize.width, videoSize.height / 6);
+    
+    // create parent layer
+    CALayer *parentLayer = [CALayer layer];
+    CALayer *videoLayer = [CALayer layer];
+    parentLayer.frame = CGRectMake(0, 0, videoSize.width, videoSize.height);
+    videoLayer.frame = CGRectMake(0, 0, videoSize.width, videoSize.height);
+    [parentLayer addSublayer:videoLayer];
+    [parentLayer addSublayer:textLayer];
+    
+    // create composition to composite
+    AVMutableVideoComposition* videoComp = [AVMutableVideoComposition videoComposition];
+    videoComp.renderSize = videoSize;
+    videoComp.frameDuration = CMTimeMake(1, 30);
+    videoComp.animationTool =
+    [AVVideoCompositionCoreAnimationTool videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:videoLayer inLayer:parentLayer];
+    
+    // create instruction
+    AVMutableVideoCompositionInstruction *instruction =
+    [AVMutableVideoCompositionInstruction videoCompositionInstruction];
+    instruction.timeRange = CMTimeRangeMake(kCMTimeZero, [mixComposition duration]);
+    AVMutableVideoCompositionLayerInstruction* layerInstruction =
+    [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:videoTrack];
+    instruction.layerInstructions = [NSArray arrayWithObject:layerInstruction];
+    
+    videoComp.instructions = [NSArray arrayWithObjects: instruction];
+    
+    // composite layer
+    AVAssetExportSession *_assetExport = [[AVAssetExportSession alloc] initWithAsset:mixComposition
+                                                    presetName:AVAssetExportPresetMediumQuality];
+    _assetExport.videoComposition = videoComp;
+    
+    NSString* videoName = @"test.mov";
+    NSString *exportPath = [NSTemporaryDirectory() stringByAppendingPathComponent:videoName];
+    NSURL *exportUrl = [NSURL fileURLWithPath:exportPath];
+    _assetExport.outputFileType = AVFileTypeMPEG4;
+    _assetExport.outputURL = exportUrl;
+    _assetExport.shouldOptimizeForNetworkUse = YES;
+    
+    // ファイルが存在している場合は削除
+    if ([[NSFileManager defaultManager] fileExistsAtPath:exportPath])
+    {
+        [[NSFileManager defaultManager] removeItemAtPath:exportPath error:nil];
+    }
+    
+    // エクスポード実行
+    [_assetExport exportAsynchronouslyWithCompletionHandler:
+     ^(void) {
+         ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+         if ([library videoAtPathIsCompatibleWithSavedPhotosAlbum:exportUrl])
+         {
+             [library writeVideoAtPathToSavedPhotosAlbum:exportUrl completionBlock:^(NSURL *assetURL, NSError *assetError){
+                 if (assetError) { }
+             }];
+         }
+    }];
+    
+}
+
+
+
 RCT_EXPORT_METHOD(embedTextOnImage:(NSString *)text :(UIImage *)img :(NSInteger *)fontSize :(NSString *)colorCode :(NSString *)backgroundColor :(NSInteger *)x :(NSInteger *)y)
 {
     [self drawText:text inImage:img FontSize:fontSize textColor:colorCode backgroundColor:backgroundColor X:x Y:y];
+}
+
+RCT_EXPORT_METHOD(embedTextOnVideo:(NSString *)text :(NSString *)videoPath :(NSInteger *)fontSize)
+{
+    [self AddTextOnVideo:[NSURL URLWithString:videoPath] text:text fontSize:fontSize];
 }
 
 @end
