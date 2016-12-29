@@ -15,6 +15,8 @@ import {
 } from 'react-native';
 import ImagePicker from 'react-native-image-picker';
 import RNMediaEditor from 'react-native-media-editor';
+import Video from 'react-native-video';
+import CameraView from './Camera';
 
 
 var options = {
@@ -38,6 +40,7 @@ export default class example extends Component {
     super(props);
 
     this.state = {
+      showCamera: false,
       loading: false,
       photo: null,
       video: null,
@@ -48,7 +51,10 @@ export default class example extends Component {
     };
 
     this.onButtonPress = this.onButtonPress.bind(this);
+    this.onTakeVideoPress = this.onTakeVideoPress.bind(this);
     this.onEmbedButtonPress = this.onEmbedButtonPress.bind(this);
+    this.renderMedia = this.renderMedia.bind(this);
+    this.renderVideo = this.renderVideo.bind(this);
     this.renderImage = this.renderImage.bind(this);
     this.renderInput = this.renderInput.bind(this);
   }
@@ -95,6 +101,40 @@ export default class example extends Component {
       // RNMediaEditor.addTextToImage(toVerticalString(text), photo, fontSize, colorCode);
       RNMediaEditor.embedTextOnImage(text, photo, fontSize, colorCode, textBackgroundColor, 200, 20);
     }
+  }
+
+  onTakeVideoPress() {
+    this.setState({
+      showCamera: true
+    });
+  }
+
+
+  renderMedia() {
+    if (this.state.video) {
+      return this.renderVideo();
+    } else if (this.state.photo) {
+      return this.renderImage();
+    } else {
+      return;
+    }
+  }
+
+  renderVideo() {
+    console.log("Video rendered")
+    console.log(this.state);
+    return (
+      <Video
+        source={{uri: this.state.video.path}}
+        ref={ref => {
+          this.player = ref;
+        }}
+        resizeMode="cover"
+        repeat
+        rate={1.0}
+        style={styles.video}
+      />
+    )
   }
 
   renderImage() {
@@ -145,22 +185,37 @@ export default class example extends Component {
   }
 
   render() {
-    return (
-      <View style={styles.container}>
-        <View >
+    if (this.state.showCamera) {
+      return (
+        <CameraView
+          endCapturing={() => {this.setState({showCamera: false})}}
+          onVideoReturned={(video) => {this.setState({video})}}
+        />
+      )
+    } else {
+      return (
+        <View style={styles.container}>
+          <View style={{ flex: 1 }}>
+          { this.renderMedia() }
+        </View>
+        <View style={styles.container}>
           <Button
             onPress={this.onButtonPress}
             title="Pick Image"
           />
           <Button
+            onPress={this.onTakeVideoPress}
+            title="Take Video"
+          />
+          <Button
             onPress={this.onEmbedButtonPress}
             title="Embed Text"
           />
-          { this.renderImage() }
+          { this.renderInput() }
         </View>
-        { this.renderInput() }
       </View>
     );
+    }
   }
 }
 
@@ -183,6 +238,11 @@ const styles = StyleSheet.create({
     fontSize: 14,
     padding: 4,
   },
+  video: {
+    flex: 1,
+    width: 200,
+    height: 300
+  }
 });
 
 AppRegistry.registerComponent('example', () => example);

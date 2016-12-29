@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Please allow app to access Camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Please allow app to access your CameraRoll</string>
 	<key>CFBundleDevelopmentRegion</key>
