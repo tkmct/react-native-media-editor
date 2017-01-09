@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.reactlibrary;
+package com.rnmediaeditor;
 
 public final class R {
     public static final class anim {
@@ -2335,33 +2335,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background com.reactlibrary:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit com.reactlibrary:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked com.reactlibrary:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd com.reactlibrary:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft com.reactlibrary:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight com.reactlibrary:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart com.reactlibrary:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout com.reactlibrary:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions com.reactlibrary:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider com.reactlibrary:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation com.reactlibrary:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height com.reactlibrary:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.reactlibrary:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.reactlibrary:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout com.reactlibrary:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon com.reactlibrary:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.reactlibrary:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding com.reactlibrary:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.reactlibrary:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode com.reactlibrary:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme com.reactlibrary:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding com.reactlibrary:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle com.reactlibrary:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle com.reactlibrary:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.reactlibrary:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title com.reactlibrary:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle com.reactlibrary:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background com.rnmediaeditor:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.rnmediaeditor:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.rnmediaeditor:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.rnmediaeditor:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.rnmediaeditor:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.rnmediaeditor:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.rnmediaeditor:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.rnmediaeditor:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.rnmediaeditor:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.rnmediaeditor:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.rnmediaeditor:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height com.rnmediaeditor:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.rnmediaeditor:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.rnmediaeditor:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.rnmediaeditor:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.rnmediaeditor:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.rnmediaeditor:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.rnmediaeditor:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.rnmediaeditor:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.rnmediaeditor:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.rnmediaeditor:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.rnmediaeditor:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.rnmediaeditor:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.rnmediaeditor:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.rnmediaeditor:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.rnmediaeditor:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.rnmediaeditor:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -2401,17 +2401,17 @@ containing a value of this type.
             0x7f01001a, 0x7f01001b, 0x7f010097
         };
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#background}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:background
+          @attr name com.rnmediaeditor:background
         */
         public static int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2419,11 +2419,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.reactlibrary:backgroundSplit
+          @attr name com.rnmediaeditor:backgroundSplit
         */
         public static int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2431,11 +2431,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.reactlibrary:backgroundStacked
+          @attr name com.rnmediaeditor:backgroundStacked
         */
         public static int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2447,11 +2447,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:contentInsetEnd
+          @attr name com.rnmediaeditor:contentInsetEnd
         */
         public static int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2463,11 +2463,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:contentInsetLeft
+          @attr name com.rnmediaeditor:contentInsetLeft
         */
         public static int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2479,11 +2479,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:contentInsetRight
+          @attr name com.rnmediaeditor:contentInsetRight
         */
         public static int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2495,21 +2495,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:contentInsetStart
+          @attr name com.rnmediaeditor:contentInsetStart
         */
         public static int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:customNavigationLayout
+          @attr name com.rnmediaeditor:customNavigationLayout
         */
         public static int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2527,21 +2527,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name com.reactlibrary:displayOptions
+          @attr name com.rnmediaeditor:displayOptions
         */
         public static int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:divider
+          @attr name com.rnmediaeditor:divider
         */
         public static int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2553,11 +2553,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:elevation
+          @attr name com.rnmediaeditor:elevation
         */
         public static int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#height}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2569,11 +2569,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:height
+          @attr name com.rnmediaeditor:height
         */
         public static int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2583,51 +2583,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:hideOnContentScroll
+          @attr name com.rnmediaeditor:hideOnContentScroll
         */
         public static int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:homeAsUpIndicator
+          @attr name com.rnmediaeditor:homeAsUpIndicator
         */
         public static int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:homeLayout
+          @attr name com.rnmediaeditor:homeLayout
         */
         public static int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:icon
+          @attr name com.rnmediaeditor:icon
         */
         public static int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:indeterminateProgressStyle
+          @attr name com.rnmediaeditor:indeterminateProgressStyle
         */
         public static int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2639,21 +2639,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:itemPadding
+          @attr name com.rnmediaeditor:itemPadding
         */
         public static int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:logo
+          @attr name com.rnmediaeditor:logo
         */
         public static int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2667,21 +2667,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.reactlibrary:navigationMode
+          @attr name com.rnmediaeditor:navigationMode
         */
         public static int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:popupTheme
+          @attr name com.rnmediaeditor:popupTheme
         */
         public static int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2693,21 +2693,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:progressBarPadding
+          @attr name com.rnmediaeditor:progressBarPadding
         */
         public static int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:progressBarStyle
+          @attr name com.rnmediaeditor:progressBarStyle
         */
         public static int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2717,21 +2717,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:subtitle
+          @attr name com.rnmediaeditor:subtitle
         */
         public static int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:subtitleTextStyle
+          @attr name com.rnmediaeditor:subtitleTextStyle
         */
         public static int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#title}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2741,17 +2741,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:title
+          @attr name com.rnmediaeditor:title
         */
         public static int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:titleTextStyle
+          @attr name com.rnmediaeditor:titleTextStyle
         */
         public static int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -2803,12 +2803,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background com.reactlibrary:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit com.reactlibrary:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout com.reactlibrary:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height com.reactlibrary:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.reactlibrary:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle com.reactlibrary:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background com.rnmediaeditor:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.rnmediaeditor:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.rnmediaeditor:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height com.rnmediaeditor:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.rnmediaeditor:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.rnmediaeditor:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -2822,17 +2822,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001c
         };
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#background}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:background
+          @attr name com.rnmediaeditor:background
         */
         public static int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -2840,21 +2840,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.reactlibrary:backgroundSplit
+          @attr name com.rnmediaeditor:backgroundSplit
         */
         public static int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:closeItemLayout
+          @attr name com.rnmediaeditor:closeItemLayout
         */
         public static int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#height}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -2866,27 +2866,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:height
+          @attr name com.rnmediaeditor:height
         */
         public static int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:subtitleTextStyle
+          @attr name com.rnmediaeditor:subtitleTextStyle
         */
         public static int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:titleTextStyle
+          @attr name com.rnmediaeditor:titleTextStyle
         */
         public static int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -2895,8 +2895,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.reactlibrary:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.reactlibrary:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.rnmediaeditor:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.rnmediaeditor:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -2905,17 +2905,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001d, 0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:expandActivityOverflowButtonDrawable
+          @attr name com.rnmediaeditor:expandActivityOverflowButtonDrawable
         */
         public static int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -2925,7 +2925,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:initialActivityCount
+          @attr name com.rnmediaeditor:initialActivityCount
         */
         public static int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -2935,11 +2935,11 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.reactlibrary:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout com.reactlibrary:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout com.reactlibrary:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.reactlibrary:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.reactlibrary:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.rnmediaeditor:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout com.rnmediaeditor:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout com.rnmediaeditor:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.rnmediaeditor:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.rnmediaeditor:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -2959,53 +2959,53 @@ containing a value of this type.
         */
         public static int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:buttonPanelSideLayout
+          @attr name com.rnmediaeditor:buttonPanelSideLayout
         */
         public static int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:listItemLayout
+          @attr name com.rnmediaeditor:listItemLayout
         */
         public static int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:listLayout
+          @attr name com.rnmediaeditor:listLayout
         */
         public static int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:multiChoiceItemLayout
+          @attr name com.rnmediaeditor:multiChoiceItemLayout
         */
         public static int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:singleChoiceItemLayout
+          @attr name com.rnmediaeditor:singleChoiceItemLayout
         */
         public static int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppCompatTextView.
@@ -3015,7 +3015,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.reactlibrary:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.rnmediaeditor:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -3030,14 +3030,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.reactlibrary:textAllCaps
+          @attr name com.rnmediaeditor:textAllCaps
         */
         public static int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a CompoundButton.
@@ -3047,8 +3047,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint com.reactlibrary:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode com.reactlibrary:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint com.rnmediaeditor:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode com.rnmediaeditor:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -3064,7 +3064,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -3075,11 +3075,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:buttonTint
+          @attr name com.rnmediaeditor:buttonTint
         */
         public static int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -3095,7 +3095,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.reactlibrary:buttonTintMode
+          @attr name com.rnmediaeditor:buttonTintMode
         */
         public static int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -3104,14 +3104,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.reactlibrary:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.reactlibrary:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength com.reactlibrary:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color com.reactlibrary:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.reactlibrary:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.reactlibrary:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.reactlibrary:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness com.reactlibrary:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.rnmediaeditor:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.rnmediaeditor:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength com.rnmediaeditor:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.rnmediaeditor:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.rnmediaeditor:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.rnmediaeditor:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.rnmediaeditor:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.rnmediaeditor:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -3127,7 +3127,7 @@ containing a value of this type.
             0x7f01002b, 0x7f01002c, 0x7f01002d, 0x7f01002e
         };
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3139,11 +3139,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:arrowHeadLength
+          @attr name com.rnmediaeditor:arrowHeadLength
         */
         public static int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3155,11 +3155,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:arrowShaftLength
+          @attr name com.rnmediaeditor:arrowShaftLength
         */
         public static int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#barLength}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3171,11 +3171,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:barLength
+          @attr name com.rnmediaeditor:barLength
         */
         public static int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#color}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3186,11 +3186,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:color
+          @attr name com.rnmediaeditor:color
         */
         public static int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3202,11 +3202,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:drawableSize
+          @attr name com.rnmediaeditor:drawableSize
         */
         public static int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3218,11 +3218,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:gapBetweenBars
+          @attr name com.rnmediaeditor:gapBetweenBars
         */
         public static int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3232,11 +3232,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:spinBars
+          @attr name com.rnmediaeditor:spinBars
         */
         public static int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#thickness}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -3248,7 +3248,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:thickness
+          @attr name com.rnmediaeditor:thickness
         */
         public static int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a GenericDraweeView.
@@ -3257,30 +3257,30 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #GenericDraweeView_actualImageScaleType com.reactlibrary:actualImageScaleType}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_backgroundImage com.reactlibrary:backgroundImage}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_fadeDuration com.reactlibrary:fadeDuration}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_failureImage com.reactlibrary:failureImage}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_failureImageScaleType com.reactlibrary:failureImageScaleType}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_overlayImage com.reactlibrary:overlayImage}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_placeholderImage com.reactlibrary:placeholderImage}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_placeholderImageScaleType com.reactlibrary:placeholderImageScaleType}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_pressedStateOverlayImage com.reactlibrary:pressedStateOverlayImage}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_progressBarAutoRotateInterval com.reactlibrary:progressBarAutoRotateInterval}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_progressBarImage com.reactlibrary:progressBarImage}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_progressBarImageScaleType com.reactlibrary:progressBarImageScaleType}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_retryImage com.reactlibrary:retryImage}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_retryImageScaleType com.reactlibrary:retryImageScaleType}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_roundAsCircle com.reactlibrary:roundAsCircle}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_roundBottomLeft com.reactlibrary:roundBottomLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_roundBottomRight com.reactlibrary:roundBottomRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_roundTopLeft com.reactlibrary:roundTopLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_roundTopRight com.reactlibrary:roundTopRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_roundWithOverlayColor com.reactlibrary:roundWithOverlayColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_roundedCornerRadius com.reactlibrary:roundedCornerRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_roundingBorderColor com.reactlibrary:roundingBorderColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_roundingBorderWidth com.reactlibrary:roundingBorderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #GenericDraweeView_viewAspectRatio com.reactlibrary:viewAspectRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_actualImageScaleType com.rnmediaeditor:actualImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_backgroundImage com.rnmediaeditor:backgroundImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_fadeDuration com.rnmediaeditor:fadeDuration}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_failureImage com.rnmediaeditor:failureImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_failureImageScaleType com.rnmediaeditor:failureImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_overlayImage com.rnmediaeditor:overlayImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_placeholderImage com.rnmediaeditor:placeholderImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_placeholderImageScaleType com.rnmediaeditor:placeholderImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_pressedStateOverlayImage com.rnmediaeditor:pressedStateOverlayImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_progressBarAutoRotateInterval com.rnmediaeditor:progressBarAutoRotateInterval}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_progressBarImage com.rnmediaeditor:progressBarImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_progressBarImageScaleType com.rnmediaeditor:progressBarImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_retryImage com.rnmediaeditor:retryImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_retryImageScaleType com.rnmediaeditor:retryImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundAsCircle com.rnmediaeditor:roundAsCircle}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundBottomLeft com.rnmediaeditor:roundBottomLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundBottomRight com.rnmediaeditor:roundBottomRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundTopLeft com.rnmediaeditor:roundTopLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundTopRight com.rnmediaeditor:roundTopRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundWithOverlayColor com.rnmediaeditor:roundWithOverlayColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundedCornerRadius com.rnmediaeditor:roundedCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundingBorderColor com.rnmediaeditor:roundingBorderColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundingBorderWidth com.rnmediaeditor:roundingBorderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_viewAspectRatio com.rnmediaeditor:viewAspectRatio}</code></td><td></td></tr>
            </table>
            @see #GenericDraweeView_actualImageScaleType
            @see #GenericDraweeView_backgroundImage
@@ -3316,7 +3316,7 @@ containing a value of this type.
             0x7f010043, 0x7f010044, 0x7f010045, 0x7f010046
         };
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actualImageScaleType}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actualImageScaleType}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3336,21 +3336,21 @@ containing a value of this type.
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
 </table>
-          @attr name com.reactlibrary:actualImageScaleType
+          @attr name com.rnmediaeditor:actualImageScaleType
         */
         public static int GenericDraweeView_actualImageScaleType = 11;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#backgroundImage}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#backgroundImage}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:backgroundImage
+          @attr name com.rnmediaeditor:backgroundImage
         */
         public static int GenericDraweeView_backgroundImage = 12;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#fadeDuration}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#fadeDuration}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3360,21 +3360,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:fadeDuration
+          @attr name com.rnmediaeditor:fadeDuration
         */
         public static int GenericDraweeView_fadeDuration = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#failureImage}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#failureImage}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:failureImage
+          @attr name com.rnmediaeditor:failureImage
         */
         public static int GenericDraweeView_failureImage = 6;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#failureImageScaleType}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#failureImageScaleType}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3394,31 +3394,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
 </table>
-          @attr name com.reactlibrary:failureImageScaleType
+          @attr name com.rnmediaeditor:failureImageScaleType
         */
         public static int GenericDraweeView_failureImageScaleType = 7;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#overlayImage}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#overlayImage}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:overlayImage
+          @attr name com.rnmediaeditor:overlayImage
         */
         public static int GenericDraweeView_overlayImage = 13;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#placeholderImage}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#placeholderImage}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:placeholderImage
+          @attr name com.rnmediaeditor:placeholderImage
         */
         public static int GenericDraweeView_placeholderImage = 2;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#placeholderImageScaleType}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#placeholderImageScaleType}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3438,21 +3438,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
 </table>
-          @attr name com.reactlibrary:placeholderImageScaleType
+          @attr name com.rnmediaeditor:placeholderImageScaleType
         */
         public static int GenericDraweeView_placeholderImageScaleType = 3;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#pressedStateOverlayImage}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#pressedStateOverlayImage}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:pressedStateOverlayImage
+          @attr name com.rnmediaeditor:pressedStateOverlayImage
         */
         public static int GenericDraweeView_pressedStateOverlayImage = 14;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#progressBarAutoRotateInterval}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#progressBarAutoRotateInterval}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3462,21 +3462,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:progressBarAutoRotateInterval
+          @attr name com.rnmediaeditor:progressBarAutoRotateInterval
         */
         public static int GenericDraweeView_progressBarAutoRotateInterval = 10;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#progressBarImage}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#progressBarImage}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:progressBarImage
+          @attr name com.rnmediaeditor:progressBarImage
         */
         public static int GenericDraweeView_progressBarImage = 8;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#progressBarImageScaleType}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#progressBarImageScaleType}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3496,21 +3496,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
 </table>
-          @attr name com.reactlibrary:progressBarImageScaleType
+          @attr name com.rnmediaeditor:progressBarImageScaleType
         */
         public static int GenericDraweeView_progressBarImageScaleType = 9;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#retryImage}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#retryImage}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:retryImage
+          @attr name com.rnmediaeditor:retryImage
         */
         public static int GenericDraweeView_retryImage = 4;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#retryImageScaleType}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#retryImageScaleType}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3530,11 +3530,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>centerCrop</code></td><td>6</td><td></td></tr>
 <tr><td><code>focusCrop</code></td><td>7</td><td></td></tr>
 </table>
-          @attr name com.reactlibrary:retryImageScaleType
+          @attr name com.rnmediaeditor:retryImageScaleType
         */
         public static int GenericDraweeView_retryImageScaleType = 5;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#roundAsCircle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#roundAsCircle}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3544,11 +3544,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:roundAsCircle
+          @attr name com.rnmediaeditor:roundAsCircle
         */
         public static int GenericDraweeView_roundAsCircle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#roundBottomLeft}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#roundBottomLeft}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3558,11 +3558,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:roundBottomLeft
+          @attr name com.rnmediaeditor:roundBottomLeft
         */
         public static int GenericDraweeView_roundBottomLeft = 20;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#roundBottomRight}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#roundBottomRight}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3572,11 +3572,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:roundBottomRight
+          @attr name com.rnmediaeditor:roundBottomRight
         */
         public static int GenericDraweeView_roundBottomRight = 19;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#roundTopLeft}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#roundTopLeft}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3586,11 +3586,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:roundTopLeft
+          @attr name com.rnmediaeditor:roundTopLeft
         */
         public static int GenericDraweeView_roundTopLeft = 17;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#roundTopRight}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#roundTopRight}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3600,11 +3600,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:roundTopRight
+          @attr name com.rnmediaeditor:roundTopRight
         */
         public static int GenericDraweeView_roundTopRight = 18;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#roundWithOverlayColor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#roundWithOverlayColor}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3615,11 +3615,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:roundWithOverlayColor
+          @attr name com.rnmediaeditor:roundWithOverlayColor
         */
         public static int GenericDraweeView_roundWithOverlayColor = 21;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#roundedCornerRadius}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#roundedCornerRadius}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3631,11 +3631,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:roundedCornerRadius
+          @attr name com.rnmediaeditor:roundedCornerRadius
         */
         public static int GenericDraweeView_roundedCornerRadius = 16;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#roundingBorderColor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#roundingBorderColor}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3646,11 +3646,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:roundingBorderColor
+          @attr name com.rnmediaeditor:roundingBorderColor
         */
         public static int GenericDraweeView_roundingBorderColor = 23;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#roundingBorderWidth}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#roundingBorderWidth}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3662,11 +3662,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:roundingBorderWidth
+          @attr name com.rnmediaeditor:roundingBorderWidth
         */
         public static int GenericDraweeView_roundingBorderWidth = 22;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#viewAspectRatio}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#viewAspectRatio}
           attribute's value can be found in the {@link #GenericDraweeView} array.
 
 
@@ -3676,7 +3676,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:viewAspectRatio
+          @attr name com.rnmediaeditor:viewAspectRatio
         */
         public static int GenericDraweeView_viewAspectRatio = 1;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -3690,10 +3690,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider com.reactlibrary:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.reactlibrary:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.reactlibrary:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.reactlibrary:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.rnmediaeditor:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.rnmediaeditor:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.rnmediaeditor:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.rnmediaeditor:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -3741,17 +3741,17 @@ containing a value of this type.
         */
         public static int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:divider
+          @attr name com.rnmediaeditor:divider
         */
         public static int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -3763,11 +3763,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:dividerPadding
+          @attr name com.rnmediaeditor:dividerPadding
         */
         public static int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -3777,11 +3777,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:measureWithLargestChild
+          @attr name com.rnmediaeditor:measureWithLargestChild
         */
         public static int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -3796,7 +3796,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.reactlibrary:showDividers
+          @attr name com.rnmediaeditor:showDividers
         */
         public static int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -3935,9 +3935,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout com.reactlibrary:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass com.reactlibrary:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass com.reactlibrary:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout com.rnmediaeditor:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.rnmediaeditor:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.rnmediaeditor:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -3951,7 +3951,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction com.reactlibrary:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.rnmediaeditor:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -3979,17 +3979,17 @@ containing a value of this type.
             0x7f01004d
         };
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionLayout
+          @attr name com.rnmediaeditor:actionLayout
         */
         public static int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -3999,11 +3999,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:actionProviderClass
+          @attr name com.rnmediaeditor:actionProviderClass
         */
         public static int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -4013,7 +4013,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:actionViewClass
+          @attr name com.rnmediaeditor:actionViewClass
         */
         public static int MenuItem_actionViewClass = 15;
         /**
@@ -4095,7 +4095,7 @@ containing a value of this type.
         */
         public static int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -4111,7 +4111,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name com.reactlibrary:showAsAction
+          @attr name com.rnmediaeditor:showAsAction
         */
         public static int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -4127,7 +4127,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing com.reactlibrary:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.rnmediaeditor:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -4185,7 +4185,7 @@ containing a value of this type.
         */
         public static int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -4195,7 +4195,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:preserveIconSpacing
+          @attr name com.rnmediaeditor:preserveIconSpacing
         */
         public static int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a PopupWindow.
@@ -4205,7 +4205,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor com.reactlibrary:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.rnmediaeditor:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -4220,7 +4220,7 @@ containing a value of this type.
         */
         public static int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -4230,7 +4230,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:overlapAnchor
+          @attr name com.rnmediaeditor:overlapAnchor
         */
         public static int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -4239,7 +4239,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.reactlibrary:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.rnmediaeditor:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -4247,7 +4247,7 @@ containing a value of this type.
             0x7f010050
         };
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -4257,7 +4257,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:state_above_anchor
+          @attr name com.rnmediaeditor:state_above_anchor
         */
         public static int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecyclerView.
@@ -4267,10 +4267,10 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager com.reactlibrary:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout com.reactlibrary:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount com.reactlibrary:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd com.reactlibrary:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager com.rnmediaeditor:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout com.rnmediaeditor:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount com.rnmediaeditor:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd com.rnmediaeditor:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_orientation
            @see #RecyclerView_layoutManager
@@ -4289,7 +4289,7 @@ containing a value of this type.
         */
         public static int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -4299,11 +4299,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:layoutManager
+          @attr name com.rnmediaeditor:layoutManager
         */
         public static int RecyclerView_layoutManager = 1;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -4313,11 +4313,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:reverseLayout
+          @attr name com.rnmediaeditor:reverseLayout
         */
         public static int RecyclerView_reverseLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -4327,11 +4327,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:spanCount
+          @attr name com.rnmediaeditor:spanCount
         */
         public static int RecyclerView_spanCount = 2;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -4341,7 +4341,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:stackFromEnd
+          @attr name com.rnmediaeditor:stackFromEnd
         */
         public static int RecyclerView_stackFromEnd = 4;
         /** Attributes that can be used with a SearchView.
@@ -4354,19 +4354,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon com.reactlibrary:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon com.reactlibrary:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint com.reactlibrary:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon com.reactlibrary:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault com.reactlibrary:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout com.reactlibrary:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground com.reactlibrary:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint com.reactlibrary:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon com.reactlibrary:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon com.reactlibrary:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground com.reactlibrary:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout com.reactlibrary:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon com.reactlibrary:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon com.rnmediaeditor:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.rnmediaeditor:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint com.rnmediaeditor:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.rnmediaeditor:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.rnmediaeditor:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout com.rnmediaeditor:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.rnmediaeditor:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.rnmediaeditor:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon com.rnmediaeditor:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.rnmediaeditor:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.rnmediaeditor:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.rnmediaeditor:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.rnmediaeditor:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -4418,27 +4418,27 @@ containing a value of this type.
         */
         public static int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:closeIcon
+          @attr name com.rnmediaeditor:closeIcon
         */
         public static int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:commitIcon
+          @attr name com.rnmediaeditor:commitIcon
         */
         public static int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -4448,21 +4448,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:defaultQueryHint
+          @attr name com.rnmediaeditor:defaultQueryHint
         */
         public static int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:goIcon
+          @attr name com.rnmediaeditor:goIcon
         */
         public static int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -4472,31 +4472,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:iconifiedByDefault
+          @attr name com.rnmediaeditor:iconifiedByDefault
         */
         public static int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#layout}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:layout
+          @attr name com.rnmediaeditor:layout
         */
         public static int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:queryBackground
+          @attr name com.rnmediaeditor:queryBackground
         */
         public static int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -4506,57 +4506,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:queryHint
+          @attr name com.rnmediaeditor:queryHint
         */
         public static int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:searchHintIcon
+          @attr name com.rnmediaeditor:searchHintIcon
         */
         public static int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:searchIcon
+          @attr name com.rnmediaeditor:searchIcon
         */
         public static int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:submitBackground
+          @attr name com.rnmediaeditor:submitBackground
         */
         public static int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:suggestionRowLayout
+          @attr name com.rnmediaeditor:suggestionRowLayout
         */
         public static int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:voiceIcon
+          @attr name com.rnmediaeditor:voiceIcon
         */
         public static int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a Spinner.
@@ -4568,7 +4568,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme com.reactlibrary:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme com.rnmediaeditor:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_popupBackground
@@ -4597,13 +4597,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int Spinner_android_prompt = 1;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:popupTheme
+          @attr name com.rnmediaeditor:popupTheme
         */
         public static int Spinner_popupTheme = 3;
         /** Attributes that can be used with a SwitchCompat.
@@ -4615,13 +4615,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText com.reactlibrary:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack com.reactlibrary:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.reactlibrary:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding com.reactlibrary:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.reactlibrary:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.reactlibrary:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track com.reactlibrary:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText com.rnmediaeditor:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.rnmediaeditor:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.rnmediaeditor:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.rnmediaeditor:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.rnmediaeditor:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.rnmediaeditor:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.rnmediaeditor:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -4658,7 +4658,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#showText}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -4668,11 +4668,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:showText
+          @attr name com.rnmediaeditor:showText
         */
         public static int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -4682,11 +4682,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:splitTrack
+          @attr name com.rnmediaeditor:splitTrack
         */
         public static int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -4698,11 +4698,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:switchMinWidth
+          @attr name com.rnmediaeditor:switchMinWidth
         */
         public static int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -4714,21 +4714,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:switchPadding
+          @attr name com.rnmediaeditor:switchPadding
         */
         public static int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:switchTextAppearance
+          @attr name com.rnmediaeditor:switchTextAppearance
         */
         public static int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -4740,17 +4740,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:thumbTextPadding
+          @attr name com.rnmediaeditor:thumbTextPadding
         */
         public static int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#track}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:track
+          @attr name com.rnmediaeditor:track
         */
         public static int SwitchCompat_track = 3;
         /** Attributes that can be used with a TextAppearance.
@@ -4763,7 +4763,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps com.reactlibrary:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps com.rnmediaeditor:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_textColor
            @see #TextAppearance_android_textSize
@@ -4800,14 +4800,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.reactlibrary:textAllCaps
+          @attr name com.rnmediaeditor:textAllCaps
         */
         public static int TextAppearance_textAllCaps = 4;
         /** Attributes that can be used with a Theme.
@@ -4816,114 +4816,114 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider com.reactlibrary:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground com.reactlibrary:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme com.reactlibrary:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize com.reactlibrary:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle com.reactlibrary:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle com.reactlibrary:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.reactlibrary:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle com.reactlibrary:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.reactlibrary:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme com.reactlibrary:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.reactlibrary:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle com.reactlibrary:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle com.reactlibrary:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.reactlibrary:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor com.reactlibrary:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground com.reactlibrary:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.reactlibrary:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.reactlibrary:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.reactlibrary:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable com.reactlibrary:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable com.reactlibrary:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable com.reactlibrary:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.reactlibrary:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.reactlibrary:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable com.reactlibrary:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground com.reactlibrary:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeStyle com.reactlibrary:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.reactlibrary:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.reactlibrary:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.reactlibrary:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle com.reactlibrary:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle com.reactlibrary:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogCenterButtons com.reactlibrary:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogStyle com.reactlibrary:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogTheme com.reactlibrary:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider com.rnmediaeditor:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground com.rnmediaeditor:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme com.rnmediaeditor:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize com.rnmediaeditor:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle com.rnmediaeditor:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle com.rnmediaeditor:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.rnmediaeditor:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle com.rnmediaeditor:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.rnmediaeditor:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme com.rnmediaeditor:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.rnmediaeditor:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle com.rnmediaeditor:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle com.rnmediaeditor:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.rnmediaeditor:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor com.rnmediaeditor:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground com.rnmediaeditor:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.rnmediaeditor:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.rnmediaeditor:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.rnmediaeditor:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable com.rnmediaeditor:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable com.rnmediaeditor:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable com.rnmediaeditor:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.rnmediaeditor:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.rnmediaeditor:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable com.rnmediaeditor:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground com.rnmediaeditor:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle com.rnmediaeditor:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.rnmediaeditor:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.rnmediaeditor:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.rnmediaeditor:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle com.rnmediaeditor:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle com.rnmediaeditor:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogCenterButtons com.rnmediaeditor:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogStyle com.rnmediaeditor:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogTheme com.rnmediaeditor:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle com.reactlibrary:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_borderlessButtonStyle com.reactlibrary:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.reactlibrary:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle com.reactlibrary:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle com.reactlibrary:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle com.reactlibrary:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle com.reactlibrary:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonStyle com.reactlibrary:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonStyleSmall com.reactlibrary:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_checkboxStyle com.reactlibrary:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_checkedTextViewStyle com.reactlibrary:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorAccent com.reactlibrary:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal com.reactlibrary:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated com.reactlibrary:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight com.reactlibrary:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal com.reactlibrary:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary com.reactlibrary:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark com.reactlibrary:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.reactlibrary:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_controlBackground com.reactlibrary:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dialogPreferredPadding com.reactlibrary:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dialogTheme com.reactlibrary:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal com.reactlibrary:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical com.reactlibrary:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle com.reactlibrary:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.reactlibrary:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground com.reactlibrary:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextColor com.reactlibrary:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextStyle com.reactlibrary:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator com.reactlibrary:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.reactlibrary:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listDividerAlertDialog com.reactlibrary:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPopupWindowStyle com.reactlibrary:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight com.reactlibrary:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.reactlibrary:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.reactlibrary:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.reactlibrary:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.reactlibrary:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelBackground com.reactlibrary:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme com.reactlibrary:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth com.reactlibrary:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle com.reactlibrary:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle com.reactlibrary:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_radioButtonStyle com.reactlibrary:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_ratingBarStyle com.reactlibrary:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle com.reactlibrary:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground com.reactlibrary:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.reactlibrary:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.reactlibrary:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle com.reactlibrary:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_switchStyle com.reactlibrary:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.reactlibrary:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem com.reactlibrary:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.reactlibrary:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.reactlibrary:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.reactlibrary:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.reactlibrary:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorAlertDialogListItem com.reactlibrary:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl com.reactlibrary:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.reactlibrary:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle com.reactlibrary:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar com.reactlibrary:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay com.reactlibrary:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay com.reactlibrary:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.reactlibrary:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.reactlibrary:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.reactlibrary:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.reactlibrary:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowMinWidthMajor com.reactlibrary:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowMinWidthMinor com.reactlibrary:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowNoTitle com.reactlibrary:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle com.rnmediaeditor:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_borderlessButtonStyle com.rnmediaeditor:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.rnmediaeditor:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle com.rnmediaeditor:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle com.rnmediaeditor:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle com.rnmediaeditor:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle com.rnmediaeditor:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonStyle com.rnmediaeditor:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonStyleSmall com.rnmediaeditor:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_checkboxStyle com.rnmediaeditor:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_checkedTextViewStyle com.rnmediaeditor:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorAccent com.rnmediaeditor:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal com.rnmediaeditor:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated com.rnmediaeditor:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight com.rnmediaeditor:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal com.rnmediaeditor:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary com.rnmediaeditor:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark com.rnmediaeditor:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.rnmediaeditor:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_controlBackground com.rnmediaeditor:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dialogPreferredPadding com.rnmediaeditor:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dialogTheme com.rnmediaeditor:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal com.rnmediaeditor:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical com.rnmediaeditor:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle com.rnmediaeditor:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.rnmediaeditor:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground com.rnmediaeditor:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextColor com.rnmediaeditor:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextStyle com.rnmediaeditor:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator com.rnmediaeditor:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.rnmediaeditor:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listDividerAlertDialog com.rnmediaeditor:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle com.rnmediaeditor:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight com.rnmediaeditor:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.rnmediaeditor:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.rnmediaeditor:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.rnmediaeditor:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.rnmediaeditor:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelBackground com.rnmediaeditor:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme com.rnmediaeditor:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth com.rnmediaeditor:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle com.rnmediaeditor:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle com.rnmediaeditor:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_radioButtonStyle com.rnmediaeditor:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_ratingBarStyle com.rnmediaeditor:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle com.rnmediaeditor:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground com.rnmediaeditor:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.rnmediaeditor:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.rnmediaeditor:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle com.rnmediaeditor:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_switchStyle com.rnmediaeditor:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.rnmediaeditor:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem com.rnmediaeditor:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.rnmediaeditor:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.rnmediaeditor:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.rnmediaeditor:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.rnmediaeditor:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorAlertDialogListItem com.rnmediaeditor:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl com.rnmediaeditor:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.rnmediaeditor:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle com.rnmediaeditor:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar com.rnmediaeditor:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay com.rnmediaeditor:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay com.rnmediaeditor:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.rnmediaeditor:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.rnmediaeditor:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.rnmediaeditor:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.rnmediaeditor:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMajor com.rnmediaeditor:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMinor com.rnmediaeditor:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowNoTitle com.rnmediaeditor:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #Theme_actionBarDivider
            @see #Theme_actionBarItemBackground
@@ -5064,37 +5064,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100cf, 0x7f0100d0, 0x7f0100d1, 0x7f0100d2
         };
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionBarDivider
+          @attr name com.rnmediaeditor:actionBarDivider
         */
         public static int Theme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionBarItemBackground
+          @attr name com.rnmediaeditor:actionBarItemBackground
         */
         public static int Theme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionBarPopupTheme
+          @attr name com.rnmediaeditor:actionBarPopupTheme
         */
         public static int Theme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5114,111 +5114,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name com.reactlibrary:actionBarSize
+          @attr name com.rnmediaeditor:actionBarSize
         */
         public static int Theme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionBarSplitStyle
+          @attr name com.rnmediaeditor:actionBarSplitStyle
         */
         public static int Theme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionBarStyle
+          @attr name com.rnmediaeditor:actionBarStyle
         */
         public static int Theme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionBarTabBarStyle
+          @attr name com.rnmediaeditor:actionBarTabBarStyle
         */
         public static int Theme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionBarTabStyle
+          @attr name com.rnmediaeditor:actionBarTabStyle
         */
         public static int Theme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionBarTabTextStyle
+          @attr name com.rnmediaeditor:actionBarTabTextStyle
         */
         public static int Theme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionBarTheme
+          @attr name com.rnmediaeditor:actionBarTheme
         */
         public static int Theme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionBarWidgetTheme
+          @attr name com.rnmediaeditor:actionBarWidgetTheme
         */
         public static int Theme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionButtonStyle
+          @attr name com.rnmediaeditor:actionButtonStyle
         */
         public static int Theme_actionButtonStyle = 49;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionDropDownStyle
+          @attr name com.rnmediaeditor:actionDropDownStyle
         */
         public static int Theme_actionDropDownStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionMenuTextAppearance
+          @attr name com.rnmediaeditor:actionMenuTextAppearance
         */
         public static int Theme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5226,181 +5226,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.reactlibrary:actionMenuTextColor
+          @attr name com.rnmediaeditor:actionMenuTextColor
         */
         public static int Theme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModeBackground
+          @attr name com.rnmediaeditor:actionModeBackground
         */
         public static int Theme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModeCloseButtonStyle
+          @attr name com.rnmediaeditor:actionModeCloseButtonStyle
         */
         public static int Theme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModeCloseDrawable
+          @attr name com.rnmediaeditor:actionModeCloseDrawable
         */
         public static int Theme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModeCopyDrawable
+          @attr name com.rnmediaeditor:actionModeCopyDrawable
         */
         public static int Theme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModeCutDrawable
+          @attr name com.rnmediaeditor:actionModeCutDrawable
         */
         public static int Theme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModeFindDrawable
+          @attr name com.rnmediaeditor:actionModeFindDrawable
         */
         public static int Theme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModePasteDrawable
+          @attr name com.rnmediaeditor:actionModePasteDrawable
         */
         public static int Theme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModePopupWindowStyle
+          @attr name com.rnmediaeditor:actionModePopupWindowStyle
         */
         public static int Theme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModeSelectAllDrawable
+          @attr name com.rnmediaeditor:actionModeSelectAllDrawable
         */
         public static int Theme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModeShareDrawable
+          @attr name com.rnmediaeditor:actionModeShareDrawable
         */
         public static int Theme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModeSplitBackground
+          @attr name com.rnmediaeditor:actionModeSplitBackground
         */
         public static int Theme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModeStyle
+          @attr name com.rnmediaeditor:actionModeStyle
         */
         public static int Theme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionModeWebSearchDrawable
+          @attr name com.rnmediaeditor:actionModeWebSearchDrawable
         */
         public static int Theme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionOverflowButtonStyle
+          @attr name com.rnmediaeditor:actionOverflowButtonStyle
         */
         public static int Theme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:actionOverflowMenuStyle
+          @attr name com.rnmediaeditor:actionOverflowMenuStyle
         */
         public static int Theme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:activityChooserViewStyle
+          @attr name com.rnmediaeditor:activityChooserViewStyle
         */
         public static int Theme_activityChooserViewStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:alertDialogButtonGroupStyle
+          @attr name com.rnmediaeditor:alertDialogButtonGroupStyle
         */
         public static int Theme_alertDialogButtonGroupStyle = 91;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5410,27 +5410,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:alertDialogCenterButtons
+          @attr name com.rnmediaeditor:alertDialogCenterButtons
         */
         public static int Theme_alertDialogCenterButtons = 92;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:alertDialogStyle
+          @attr name com.rnmediaeditor:alertDialogStyle
         */
         public static int Theme_alertDialogStyle = 90;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:alertDialogTheme
+          @attr name com.rnmediaeditor:alertDialogTheme
         */
         public static int Theme_alertDialogTheme = 93;
         /**
@@ -5446,117 +5446,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int Theme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:autoCompleteTextViewStyle
+          @attr name com.rnmediaeditor:autoCompleteTextViewStyle
         */
         public static int Theme_autoCompleteTextViewStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:borderlessButtonStyle
+          @attr name com.rnmediaeditor:borderlessButtonStyle
         */
         public static int Theme_borderlessButtonStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:buttonBarButtonStyle
+          @attr name com.rnmediaeditor:buttonBarButtonStyle
         */
         public static int Theme_buttonBarButtonStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:buttonBarNegativeButtonStyle
+          @attr name com.rnmediaeditor:buttonBarNegativeButtonStyle
         */
         public static int Theme_buttonBarNegativeButtonStyle = 96;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:buttonBarNeutralButtonStyle
+          @attr name com.rnmediaeditor:buttonBarNeutralButtonStyle
         */
         public static int Theme_buttonBarNeutralButtonStyle = 97;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:buttonBarPositiveButtonStyle
+          @attr name com.rnmediaeditor:buttonBarPositiveButtonStyle
         */
         public static int Theme_buttonBarPositiveButtonStyle = 95;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:buttonBarStyle
+          @attr name com.rnmediaeditor:buttonBarStyle
         */
         public static int Theme_buttonBarStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#buttonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:buttonStyle
+          @attr name com.rnmediaeditor:buttonStyle
         */
         public static int Theme_buttonStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:buttonStyleSmall
+          @attr name com.rnmediaeditor:buttonStyleSmall
         */
         public static int Theme_buttonStyleSmall = 100;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:checkboxStyle
+          @attr name com.rnmediaeditor:checkboxStyle
         */
         public static int Theme_checkboxStyle = 101;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:checkedTextViewStyle
+          @attr name com.rnmediaeditor:checkedTextViewStyle
         */
         public static int Theme_checkedTextViewStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5567,11 +5567,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:colorAccent
+          @attr name com.rnmediaeditor:colorAccent
         */
         public static int Theme_colorAccent = 83;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5582,11 +5582,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:colorButtonNormal
+          @attr name com.rnmediaeditor:colorButtonNormal
         */
         public static int Theme_colorButtonNormal = 87;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5597,11 +5597,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:colorControlActivated
+          @attr name com.rnmediaeditor:colorControlActivated
         */
         public static int Theme_colorControlActivated = 85;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5612,11 +5612,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:colorControlHighlight
+          @attr name com.rnmediaeditor:colorControlHighlight
         */
         public static int Theme_colorControlHighlight = 86;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5627,11 +5627,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:colorControlNormal
+          @attr name com.rnmediaeditor:colorControlNormal
         */
         public static int Theme_colorControlNormal = 84;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5642,11 +5642,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:colorPrimary
+          @attr name com.rnmediaeditor:colorPrimary
         */
         public static int Theme_colorPrimary = 81;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5657,11 +5657,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:colorPrimaryDark
+          @attr name com.rnmediaeditor:colorPrimaryDark
         */
         public static int Theme_colorPrimaryDark = 82;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5672,21 +5672,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:colorSwitchThumbNormal
+          @attr name com.rnmediaeditor:colorSwitchThumbNormal
         */
         public static int Theme_colorSwitchThumbNormal = 88;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#controlBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:controlBackground
+          @attr name com.rnmediaeditor:controlBackground
         */
         public static int Theme_controlBackground = 89;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5698,51 +5698,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:dialogPreferredPadding
+          @attr name com.rnmediaeditor:dialogPreferredPadding
         */
         public static int Theme_dialogPreferredPadding = 43;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#dialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:dialogTheme
+          @attr name com.rnmediaeditor:dialogTheme
         */
         public static int Theme_dialogTheme = 42;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:dividerHorizontal
+          @attr name com.rnmediaeditor:dividerHorizontal
         */
         public static int Theme_dividerHorizontal = 56;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:dividerVertical
+          @attr name com.rnmediaeditor:dividerVertical
         */
         public static int Theme_dividerVertical = 55;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:dropDownListViewStyle
+          @attr name com.rnmediaeditor:dropDownListViewStyle
         */
         public static int Theme_dropDownListViewStyle = 73;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5754,21 +5754,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:dropdownListPreferredItemHeight
+          @attr name com.rnmediaeditor:dropdownListPreferredItemHeight
         */
         public static int Theme_dropdownListPreferredItemHeight = 46;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:editTextBackground
+          @attr name com.rnmediaeditor:editTextBackground
         */
         public static int Theme_editTextBackground = 63;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5776,61 +5776,61 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.reactlibrary:editTextColor
+          @attr name com.rnmediaeditor:editTextColor
         */
         public static int Theme_editTextColor = 62;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#editTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:editTextStyle
+          @attr name com.rnmediaeditor:editTextStyle
         */
         public static int Theme_editTextStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:homeAsUpIndicator
+          @attr name com.rnmediaeditor:homeAsUpIndicator
         */
         public static int Theme_homeAsUpIndicator = 48;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:listChoiceBackgroundIndicator
+          @attr name com.rnmediaeditor:listChoiceBackgroundIndicator
         */
         public static int Theme_listChoiceBackgroundIndicator = 80;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:listDividerAlertDialog
+          @attr name com.rnmediaeditor:listDividerAlertDialog
         */
         public static int Theme_listDividerAlertDialog = 44;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:listPopupWindowStyle
+          @attr name com.rnmediaeditor:listPopupWindowStyle
         */
         public static int Theme_listPopupWindowStyle = 74;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5842,11 +5842,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:listPreferredItemHeight
+          @attr name com.rnmediaeditor:listPreferredItemHeight
         */
         public static int Theme_listPreferredItemHeight = 68;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5858,11 +5858,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:listPreferredItemHeightLarge
+          @attr name com.rnmediaeditor:listPreferredItemHeightLarge
         */
         public static int Theme_listPreferredItemHeightLarge = 70;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5874,11 +5874,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:listPreferredItemHeightSmall
+          @attr name com.rnmediaeditor:listPreferredItemHeightSmall
         */
         public static int Theme_listPreferredItemHeightSmall = 69;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5890,11 +5890,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:listPreferredItemPaddingLeft
+          @attr name com.rnmediaeditor:listPreferredItemPaddingLeft
         */
         public static int Theme_listPreferredItemPaddingLeft = 71;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5906,31 +5906,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:listPreferredItemPaddingRight
+          @attr name com.rnmediaeditor:listPreferredItemPaddingRight
         */
         public static int Theme_listPreferredItemPaddingRight = 72;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:panelBackground
+          @attr name com.rnmediaeditor:panelBackground
         */
         public static int Theme_panelBackground = 77;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:panelMenuListTheme
+          @attr name com.rnmediaeditor:panelMenuListTheme
         */
         public static int Theme_panelMenuListTheme = 79;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5942,171 +5942,171 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:panelMenuListWidth
+          @attr name com.rnmediaeditor:panelMenuListWidth
         */
         public static int Theme_panelMenuListWidth = 78;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:popupMenuStyle
+          @attr name com.rnmediaeditor:popupMenuStyle
         */
         public static int Theme_popupMenuStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:popupWindowStyle
+          @attr name com.rnmediaeditor:popupWindowStyle
         */
         public static int Theme_popupWindowStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:radioButtonStyle
+          @attr name com.rnmediaeditor:radioButtonStyle
         */
         public static int Theme_radioButtonStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:ratingBarStyle
+          @attr name com.rnmediaeditor:ratingBarStyle
         */
         public static int Theme_ratingBarStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:searchViewStyle
+          @attr name com.rnmediaeditor:searchViewStyle
         */
         public static int Theme_searchViewStyle = 67;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:selectableItemBackground
+          @attr name com.rnmediaeditor:selectableItemBackground
         */
         public static int Theme_selectableItemBackground = 52;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:selectableItemBackgroundBorderless
+          @attr name com.rnmediaeditor:selectableItemBackgroundBorderless
         */
         public static int Theme_selectableItemBackgroundBorderless = 53;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:spinnerDropDownItemStyle
+          @attr name com.rnmediaeditor:spinnerDropDownItemStyle
         */
         public static int Theme_spinnerDropDownItemStyle = 47;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:spinnerStyle
+          @attr name com.rnmediaeditor:spinnerStyle
         */
         public static int Theme_spinnerStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:switchStyle
+          @attr name com.rnmediaeditor:switchStyle
         */
         public static int Theme_switchStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:textAppearanceLargePopupMenu
+          @attr name com.rnmediaeditor:textAppearanceLargePopupMenu
         */
         public static int Theme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:textAppearanceListItem
+          @attr name com.rnmediaeditor:textAppearanceListItem
         */
         public static int Theme_textAppearanceListItem = 75;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:textAppearanceListItemSmall
+          @attr name com.rnmediaeditor:textAppearanceListItemSmall
         */
         public static int Theme_textAppearanceListItemSmall = 76;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:textAppearanceSearchResultSubtitle
+          @attr name com.rnmediaeditor:textAppearanceSearchResultSubtitle
         */
         public static int Theme_textAppearanceSearchResultSubtitle = 65;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:textAppearanceSearchResultTitle
+          @attr name com.rnmediaeditor:textAppearanceSearchResultTitle
         */
         public static int Theme_textAppearanceSearchResultTitle = 64;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:textAppearanceSmallPopupMenu
+          @attr name com.rnmediaeditor:textAppearanceSmallPopupMenu
         */
         public static int Theme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6114,11 +6114,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.reactlibrary:textColorAlertDialogListItem
+          @attr name com.rnmediaeditor:textColorAlertDialogListItem
         */
         public static int Theme_textColorAlertDialogListItem = 94;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6126,31 +6126,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.reactlibrary:textColorSearchUrl
+          @attr name com.rnmediaeditor:textColorSearchUrl
         */
         public static int Theme_textColorSearchUrl = 66;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:toolbarNavigationButtonStyle
+          @attr name com.rnmediaeditor:toolbarNavigationButtonStyle
         */
         public static int Theme_toolbarNavigationButtonStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:toolbarStyle
+          @attr name com.rnmediaeditor:toolbarStyle
         */
         public static int Theme_toolbarStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6160,11 +6160,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:windowActionBar
+          @attr name com.rnmediaeditor:windowActionBar
         */
         public static int Theme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6174,11 +6174,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:windowActionBarOverlay
+          @attr name com.rnmediaeditor:windowActionBarOverlay
         */
         public static int Theme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6188,11 +6188,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:windowActionModeOverlay
+          @attr name com.rnmediaeditor:windowActionModeOverlay
         */
         public static int Theme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6207,11 +6207,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:windowFixedHeightMajor
+          @attr name com.rnmediaeditor:windowFixedHeightMajor
         */
         public static int Theme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6226,11 +6226,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:windowFixedHeightMinor
+          @attr name com.rnmediaeditor:windowFixedHeightMinor
         */
         public static int Theme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6245,11 +6245,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:windowFixedWidthMajor
+          @attr name com.rnmediaeditor:windowFixedWidthMajor
         */
         public static int Theme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6264,11 +6264,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:windowFixedWidthMinor
+          @attr name com.rnmediaeditor:windowFixedWidthMinor
         */
         public static int Theme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6283,11 +6283,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:windowMinWidthMajor
+          @attr name com.rnmediaeditor:windowMinWidthMajor
         */
         public static int Theme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6302,11 +6302,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:windowMinWidthMinor
+          @attr name com.rnmediaeditor:windowMinWidthMinor
         */
         public static int Theme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6316,7 +6316,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:windowNoTitle
+          @attr name com.rnmediaeditor:windowNoTitle
         */
         public static int Theme_windowNoTitle = 3;
         /** Attributes that can be used with a Toolbar.
@@ -6327,29 +6327,29 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription com.reactlibrary:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon com.reactlibrary:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd com.reactlibrary:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft com.reactlibrary:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight com.reactlibrary:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart com.reactlibrary:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo com.reactlibrary:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription com.reactlibrary:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight com.reactlibrary:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription com.reactlibrary:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon com.reactlibrary:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme com.reactlibrary:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle com.reactlibrary:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.reactlibrary:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor com.reactlibrary:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title com.reactlibrary:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom com.reactlibrary:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd com.reactlibrary:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart com.reactlibrary:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop com.reactlibrary:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins com.reactlibrary:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance com.reactlibrary:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor com.reactlibrary:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.rnmediaeditor:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.rnmediaeditor:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.rnmediaeditor:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.rnmediaeditor:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.rnmediaeditor:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.rnmediaeditor:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo com.rnmediaeditor:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription com.rnmediaeditor:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.rnmediaeditor:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.rnmediaeditor:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon com.rnmediaeditor:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme com.rnmediaeditor:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.rnmediaeditor:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.rnmediaeditor:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor com.rnmediaeditor:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.rnmediaeditor:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.rnmediaeditor:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.rnmediaeditor:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.rnmediaeditor:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.rnmediaeditor:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.rnmediaeditor:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.rnmediaeditor:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor com.rnmediaeditor:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -6399,7 +6399,7 @@ containing a value of this type.
         */
         public static int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6409,21 +6409,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:collapseContentDescription
+          @attr name com.rnmediaeditor:collapseContentDescription
         */
         public static int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:collapseIcon
+          @attr name com.rnmediaeditor:collapseIcon
         */
         public static int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6435,11 +6435,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:contentInsetEnd
+          @attr name com.rnmediaeditor:contentInsetEnd
         */
         public static int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6451,11 +6451,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:contentInsetLeft
+          @attr name com.rnmediaeditor:contentInsetLeft
         */
         public static int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6467,11 +6467,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:contentInsetRight
+          @attr name com.rnmediaeditor:contentInsetRight
         */
         public static int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6483,21 +6483,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:contentInsetStart
+          @attr name com.rnmediaeditor:contentInsetStart
         */
         public static int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:logo
+          @attr name com.rnmediaeditor:logo
         */
         public static int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6507,11 +6507,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:logoDescription
+          @attr name com.rnmediaeditor:logoDescription
         */
         public static int Toolbar_logoDescription = 22;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6523,11 +6523,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:maxButtonHeight
+          @attr name com.rnmediaeditor:maxButtonHeight
         */
         public static int Toolbar_maxButtonHeight = 17;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6537,31 +6537,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:navigationContentDescription
+          @attr name com.rnmediaeditor:navigationContentDescription
         */
         public static int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:navigationIcon
+          @attr name com.rnmediaeditor:navigationIcon
         */
         public static int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:popupTheme
+          @attr name com.rnmediaeditor:popupTheme
         */
         public static int Toolbar_popupTheme = 9;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6571,21 +6571,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:subtitle
+          @attr name com.rnmediaeditor:subtitle
         */
         public static int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:subtitleTextAppearance
+          @attr name com.rnmediaeditor:subtitleTextAppearance
         */
         public static int Toolbar_subtitleTextAppearance = 11;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6596,11 +6596,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:subtitleTextColor
+          @attr name com.rnmediaeditor:subtitleTextColor
         */
         public static int Toolbar_subtitleTextColor = 24;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#title}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6610,11 +6610,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:title
+          @attr name com.rnmediaeditor:title
         */
         public static int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6626,11 +6626,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:titleMarginBottom
+          @attr name com.rnmediaeditor:titleMarginBottom
         */
         public static int Toolbar_titleMarginBottom = 16;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6642,11 +6642,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:titleMarginEnd
+          @attr name com.rnmediaeditor:titleMarginEnd
         */
         public static int Toolbar_titleMarginEnd = 14;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6658,11 +6658,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:titleMarginStart
+          @attr name com.rnmediaeditor:titleMarginStart
         */
         public static int Toolbar_titleMarginStart = 13;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6674,11 +6674,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:titleMarginTop
+          @attr name com.rnmediaeditor:titleMarginTop
         */
         public static int Toolbar_titleMarginTop = 15;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6690,21 +6690,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:titleMargins
+          @attr name com.rnmediaeditor:titleMargins
         */
         public static int Toolbar_titleMargins = 12;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:titleTextAppearance
+          @attr name com.rnmediaeditor:titleTextAppearance
         */
         public static int Toolbar_titleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6715,7 +6715,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:titleTextColor
+          @attr name com.rnmediaeditor:titleTextColor
         */
         public static int Toolbar_titleTextColor = 23;
         /** Attributes that can be used with a View.
@@ -6726,9 +6726,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd com.reactlibrary:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart com.reactlibrary:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme com.reactlibrary:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.rnmediaeditor:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart com.rnmediaeditor:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme com.rnmediaeditor:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -6753,7 +6753,7 @@ containing a value of this type.
         */
         public static int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -6765,11 +6765,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:paddingEnd
+          @attr name com.rnmediaeditor:paddingEnd
         */
         public static int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -6781,17 +6781,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:paddingStart
+          @attr name com.rnmediaeditor:paddingStart
         */
         public static int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.reactlibrary:theme
+          @attr name com.rnmediaeditor:theme
         */
         public static int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -6801,8 +6801,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.reactlibrary:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.reactlibrary:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.rnmediaeditor:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.rnmediaeditor:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -6818,7 +6818,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -6829,11 +6829,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.reactlibrary:backgroundTint
+          @attr name com.rnmediaeditor:backgroundTint
         */
         public static int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.reactlibrary.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.rnmediaeditor.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -6849,7 +6849,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.reactlibrary:backgroundTintMode
+          @attr name com.rnmediaeditor:backgroundTintMode
         */
         public static int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.

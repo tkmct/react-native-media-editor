@@ -4,10 +4,10 @@ import android.app.Application;
 import android.util.Log;
 
 import com.facebook.react.ReactApplication;
+import com.rnmediaeditor.RNMediaEditorPackage;
 import com.brentvatne.react.ReactVideoPackage;
-import com.lwansbrough.RCTCamera.RCTCameraPackage;
 import com.imagepicker.ImagePickerPackage;
-import com.reactlibrary.RNMediaEditorPackage;
+import com.lwansbrough.RCTCamera.RCTCameraPackage;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -29,10 +29,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNMediaEditorPackage(),
             new ReactVideoPackage(),
-            new RCTCameraPackage(),
             new ImagePickerPackage(),
-            new RNMediaEditorPackage()
+            new RCTCameraPackage()
       );
     }
   };

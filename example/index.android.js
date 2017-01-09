@@ -96,13 +96,15 @@ export default class example extends Component {
   }
 
   onEmbedButtonPress() {
-    const {text, subText, photo, video, fontSize, colorCode, textBackgroundColor} = this.state;
-    if (video) {
-      RNMediaEditor.embedTextOnVideo(text, video.path, fontSize);
-    } else if (photo) {
-      // RNMediaEditor.addTextToImage(toVerticalString(text), photo, fontSize, colorCode);
-      RNMediaEditor.embedTextOnImage(text, photo, fontSize, colorCode, textBackgroundColor, 200, 20);
-    }
+    RNMediaEditor.echo("Hello from RNMediaEditor android");
+    console.log(RNMediaEditor);
+    // const {text, subText, photo, video, fontSize, colorCode, textBackgroundColor} = this.state;
+    // if (video) {
+    //   RNMediaEditor.embedTextOnVideo(text, video.path, fontSize);
+    // } else if (photo) {
+    //   // RNMediaEditor.addTextToImage(toVerticalString(text), photo, fontSize, colorCode);
+    //   RNMediaEditor.embedTextOnImage(text, photo, fontSize, colorCode, textBackgroundColor, 200, 20);
+    // }
   }
 
   onTakeVideoPress() {

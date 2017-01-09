@@ -1,5 +1,4 @@
-
-package com.reactlibrary;
+package com.rnmediaeditor;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -18,5 +17,10 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
   @Override
   public String getName() {
     return "RNMediaEditor";
+  }
+
+  @ReactMethod
+  public void echo(final String text) {
+    System.out.println("Echo by Android module: " + text);
   }
 }
