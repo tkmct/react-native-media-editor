@@ -83,7 +83,7 @@ export default class example extends Component {
         if (Platform.OS === 'ios') {
           source = {uri: response.uri.replace('file://', ''), isStatic: true};
         } else {
-          source = {uri: response.path, isStatic: true};
+          source = {uri: response.uri, path: response.path, isStatic: true};
         }
         console.log(source);
 
@@ -105,7 +105,14 @@ export default class example extends Component {
     if (video) {
       RNMediaEditor.embedTextOnVideo(text, video.path, fontSize, (file) => { console.log(file); }, (err) => console.log(err));
     } else if (photo) {
-      RNMediaEditor.embedTextOnImage(text, photo.uri, fontSize, colorCode, (file) => { console.log(file); }, (err) => {console.log(err)});
+      RNMediaEditor.embedTextOnImage(text, photo.path, fontSize, colorCode, (file) => {
+         console.log(file);
+         this.setState({photo: {
+           uri: file
+         }});
+       }, (err) => {
+         console.log(err)
+       });
     }
   }
 
