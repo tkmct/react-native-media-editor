@@ -77,15 +77,15 @@ export default class example extends Component {
         console.log('User tapped custom button: ', response.customButton);
       }
       else {
-        // You can display the image using either data...
-        const source = {uri: 'data:image/jpeg;base64,' + response.data, isStatic: true};
 
+        let source;
         // or a reference to the platform specific asset location
         if (Platform.OS === 'ios') {
-          const source = {uri: response.uri.replace('file://', ''), isStatic: true};
+          source = {uri: response.uri.replace('file://', ''), isStatic: true};
         } else {
-          const source = {uri: response.uri, isStatic: true};
+          source = {uri: response.path, isStatic: true};
         }
+        console.log(source);
 
         this.setState({
           photo: source,
@@ -96,15 +96,17 @@ export default class example extends Component {
   }
 
   onEmbedButtonPress() {
-    RNMediaEditor.echo("Hello from RNMediaEditor android");
     console.log(RNMediaEditor);
-    // const {text, subText, photo, video, fontSize, colorCode, textBackgroundColor} = this.state;
-    // if (video) {
-    //   RNMediaEditor.embedTextOnVideo(text, video.path, fontSize);
-    // } else if (photo) {
-    //   // RNMediaEditor.addTextToImage(toVerticalString(text), photo, fontSize, colorCode);
-    //   RNMediaEditor.embedTextOnImage(text, photo, fontSize, colorCode, textBackgroundColor, 200, 20);
-    // }
+    const {text, subText, photo, video, fontSize, colorCode, textBackgroundColor} = this.state;
+
+    console.log(video);
+    console.log(photo);
+
+    if (video) {
+      RNMediaEditor.embedTextOnVideo(text, video.path, fontSize, (file) => { console.log(file); }, (err) => console.log(err));
+    } else if (photo) {
+      RNMediaEditor.embedTextOnImage(text, photo.uri, fontSize, colorCode, (file) => { console.log(file); }, (err) => {console.log(err)});
+    }
   }
 
   onTakeVideoPress() {
@@ -154,7 +156,7 @@ export default class example extends Component {
     } else {
       return;
     }
-  }
+}
 
   renderInput() {
     return (

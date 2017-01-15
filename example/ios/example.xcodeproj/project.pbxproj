@@ -26,7 +26,7 @@
 		736C46895B4D49A2BC3FF6DA /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85573C9DF1934A02AD998E4B /* libRCTCamera.a */; };
 		265A9BF771684A3097100A10 /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8E7C9F3D294BB7A46F39AC /* libRNImagePicker.a */; };
 		C66647AB9C944A788EF4739A /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 271A0182432F4B4EA0CAE982 /* libRCTVideo.a */; };
-		FC6847BF22BA40478D33C5F8 /* libRNMediaEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BA027003F14AE484D70860 /* libRNMediaEditor.a */; };
+		6C8A37E21A2848FA8E3F7EF2 /* libRNMediaEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C03F213C344C4195FF3B78 /* libRNMediaEditor.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,8 +152,8 @@
 		ED8E7C9F3D294BB7A46F39AC /* libRNImagePicker.a */ = {isa = PBXFileReference; name = "libRNImagePicker.a"; path = "libRNImagePicker.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		EC51DC2FC3A24069AC6EAB93 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; name = "RCTVideo.xcodeproj"; path = "../node_modules/react-native-video/RCTVideo.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		271A0182432F4B4EA0CAE982 /* libRCTVideo.a */ = {isa = PBXFileReference; name = "libRCTVideo.a"; path = "libRCTVideo.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		53226BBC78AB4A5CAD104529 /* RNMediaEditor.xcodeproj */ = {isa = PBXFileReference; name = "RNMediaEditor.xcodeproj"; path = "../node_modules/react-native-media-editor/ios/RNMediaEditor.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		E7BA027003F14AE484D70860 /* libRNMediaEditor.a */ = {isa = PBXFileReference; name = "libRNMediaEditor.a"; path = "libRNMediaEditor.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		90A4F5864DFE4C00B58CCAB2 /* RNMediaEditor.xcodeproj */ = {isa = PBXFileReference; name = "RNMediaEditor.xcodeproj"; path = "../node_modules/react-native-media-editor/ios/RNMediaEditor.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		C7C03F213C344C4195FF3B78 /* libRNMediaEditor.a */ = {isa = PBXFileReference; name = "libRNMediaEditor.a"; path = "libRNMediaEditor.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +183,7 @@
 				736C46895B4D49A2BC3FF6DA /* libRCTCamera.a in Frameworks */,
 				265A9BF771684A3097100A10 /* libRNImagePicker.a in Frameworks */,
 				C66647AB9C944A788EF4739A /* libRCTVideo.a in Frameworks */,
-				FC6847BF22BA40478D33C5F8 /* libRNMediaEditor.a in Frameworks */,
+				6C8A37E21A2848FA8E3F7EF2 /* libRNMediaEditor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +319,7 @@
 				BB260E350C234CF79B294C94 /* RCTCamera.xcodeproj */,
 				6374AF81CCD24B60AD46AB01 /* RNImagePicker.xcodeproj */,
 				EC51DC2FC3A24069AC6EAB93 /* RCTVideo.xcodeproj */,
-				53226BBC78AB4A5CAD104529 /* RNMediaEditor.xcodeproj */,
+				90A4F5864DFE4C00B58CCAB2 /* RNMediaEditor.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
