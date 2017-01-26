@@ -43,7 +43,7 @@ export default class example extends Component {
       showCamera: false,
       loading: false,
       photo: null,
-      video: null,
+      video: {path: '/storage/emulated/0/DCIM/VID_20170120_031957.mp4'},
       text: '',
       fontSize: 20,
       colorCode: '#ffffff',
@@ -103,7 +103,7 @@ export default class example extends Component {
     console.log(photo);
 
     if (video) {
-      RNMediaEditor.embedTextOnVideo(text, video.path, fontSize, (file) => { console.log(file); }, (err) => console.log(err));
+      RNMediaEditor.embedTextOnVideo(text, video.path, fontSize, colorCode, (file) => { console.log(file); }, (err) => console.log(err));
     } else if (photo) {
       RNMediaEditor.embedTextOnImage(text, photo.path, fontSize, colorCode, (file) => {
          console.log(file);
@@ -135,7 +135,7 @@ export default class example extends Component {
 
   renderVideo() {
     console.log("Video rendered")
-    console.log(this.state);
+    console.log(this.state.video);
     return (
       <Video
         source={{uri: this.state.video.path}}

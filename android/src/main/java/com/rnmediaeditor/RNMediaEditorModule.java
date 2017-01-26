@@ -6,7 +6,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
@@ -16,6 +15,11 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
+import com.github.hiteshsondhi88.libffmpeg.ExecuteBinaryResponseHandler;
+import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
+import com.github.hiteshsondhi88.libffmpeg.LoadBinaryResponseHandler;
+import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegCommandAlreadyRunningException;
+import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegNotSupportedException;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -43,6 +47,8 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
   public String getName() {
     return "RNMediaEditor";
   }
+
+
 
   @ReactMethod
   public void embedTextOnImage(String text, String path, int fontSize, String fontColor, Callback successCallback, Callback errorCallback) {
@@ -92,7 +98,66 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void embedTextOnVideo(String text, String path, int fontSize) {
+  public void embedTextOnVideo(String text, String path, int fontSize, String fontColor, final Callback successCallback, final Callback errorCallback) {
+    FFmpeg ffmpeg = FFmpeg.getInstance(_reactContext);
+    try {
+      ffmpeg.loadBinary(new LoadBinaryResponseHandler() {
+
+        @Override
+        public void onStart() {}
+
+        @Override
+        public void onFailure() {}
+
+        @Override
+        public void onSuccess() {}
+
+        @Override
+        public void onFinish() {}
+      });
+    } catch (FFmpegNotSupportedException e) {
+      // Handle if FFmpeg is not supported by device
+    }
+
+    File out = getOutputFile(TYPE_VIDEO);
+
+//    String[] cmd = new String[] {
+//            "-i", path, "-vf",
+//            String.format("drawtext=\"fontfile=/systems/fonts/DroidSans.ttf: text='%s': " +
+//                    "box=1: boxcolor=black@0.5: boxborder=5: x=(w-text_w)/t: y=(h-text_h)/2\"", text),
+//            "-codec:a", "aac", out.getAbsolutePath()
+//    };
+    String[] cmd = new String[] {
+            "-i", path, "-ss", "30", "-c", "copy", "-t", "10", out.getAbsolutePath()
+    };
+
+    try {
+      // to execute "ffmpeg -version" command you just need to pass "-version"
+      ffmpeg.execute(cmd, new ExecuteBinaryResponseHandler() {
+
+        @Override
+        public void onStart() {}
+
+        @Override
+        public void onProgress(String message) {}
+
+        @Override
+        public void onFailure(String message) {
+          errorCallback.invoke("Error ffmpeg executing with message:\n\t" + message);
+        }
+
+        @Override
+        public void onSuccess(String message) {
+          successCallback.invoke("Successfully output file with message:\n\t");
+        }
+
+        @Override
+        public void onFinish() {}
+      });
+    } catch (FFmpegCommandAlreadyRunningException e) {
+      // Handle if FFmpeg is already running
+    }
+
 
   }
 

@@ -22,29 +22,43 @@ RCT_EXPORT_MODULE()
 
 
 // TODO 文字の大きさ, textBoxなどの大きさの調整
-- (UIImage *) drawText:(NSString *) text
-              inImage:(UIImage *) image
+- (UIImage *) Text:(NSString *) text
+              Image:(UIImage *) image
               FontSize:(NSInteger)fontSize
-              textColor:(NSString *)textColor
-              backgroundColor:(NSString *)backgroundColor
-              X:(NSInteger) x
-              Y:(NSInteger) y
+              TextColor:(NSString *)textColor
+              BackgroundColor:(NSString *)backgroundColor
+              Top:(NSInteger) top
+              Left:(NSInteger) left
 {
-  CGPoint point = CGPointMake(x, y);
+  // create font and size of font
   UIFont *font = [UIFont boldSystemFontOfSize:fontSize];
+  CGSize size = [text sizeWithFont:font];
+
+  // create rect of image
   UIGraphicsBeginImageContext(image.size);
   [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
-  CGRect rect = CGRectMake(point.x, point.y, image.size.width, image.size.height);
+
+  // wrapper rect
+  CGRect rect = CGRectMake(0, 0, image.size.width, image.size.height);
+
+  // the base point of text rect
+  CGPoint point = CGPointMake(left, top);
   [[self colorFromHexString:backgroundColor] set];
+  CGRect textContainer = CGRectMake(point.x, point.y, size.width + fontSize*2, size.height * 2);
+
   CGContextFillRect(
     UIGraphicsGetCurrentContext(),
-    CGRectMake(point.x, point.y,
-    image.size.width, fontSize)); // TODO fontsize => 決められるように
+    textContainer
+  );
+
+  CGRect textRect = CGRectMake(point.x + fontSize, point.y + textContainer.size.height/4, size.width, size.height);
+
   [[self colorFromHexString:textColor] set];
-  [text drawInRect:CGRectIntegral(rect)
+  [text drawInRect:textRect
     withFont:font
-    lineBreakMode:UILineBreakModeTailTruncation
-    alignment:UITextAlignmentCenter ];
+    lineBreakMode:UILineBreakModeClip
+    alignment:UITextAlignmentLeft ];
+
   UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
   UIGraphicsEndImageContext();
   UIImageWriteToSavedPhotosAlbum(newImage, nil, nil, nil);
@@ -57,16 +71,16 @@ RCT_EXPORT_MODULE()
               fontSize:(NSInteger)fontSize
 {
     AVURLAsset *videoAsset = [[AVURLAsset alloc] initWithURL:videoPath options:nil];
-    
+
     AVMutableComposition* mixComposition = [AVMutableComposition composition];
     AVMutableCompositionTrack *compositionVideoTrack =
     [mixComposition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
-    
+
     AVAssetTrack *videoTrack = [[videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
-    
+
     [compositionVideoTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, videoAsset.duration) ofTrack:videoTrack atTime:kCMTimeZero error:nil];
     [compositionVideoTrack setPreferredTransform:[[[videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0] preferredTransform]];
-    
+
     // Create text layer
     CGSize videoSize = videoTrack.naturalSize;
     // TODO size
@@ -76,7 +90,7 @@ RCT_EXPORT_MODULE()
     textLayer.shadowOpacity = 0.5;
     textLayer.alignmentMode = kCAAlignmentCenter;
     textLayer.bounds = CGRectMake(0, 0, videoSize.width, videoSize.height / 6);
-    
+
     // create parent layer
     CALayer *parentLayer = [CALayer layer];
     CALayer *videoLayer = [CALayer layer];
@@ -84,14 +98,14 @@ RCT_EXPORT_MODULE()
     videoLayer.frame = CGRectMake(0, 0, videoSize.width, videoSize.height);
     [parentLayer addSublayer:videoLayer];
     [parentLayer addSublayer:textLayer];
-    
+
     // create composition to composite
     AVMutableVideoComposition* videoComp = [AVMutableVideoComposition videoComposition];
     videoComp.renderSize = videoSize;
     videoComp.frameDuration = CMTimeMake(1, 30);
     videoComp.animationTool =
     [AVVideoCompositionCoreAnimationTool videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:videoLayer inLayer:parentLayer];
-    
+
     // create instruction
     AVMutableVideoCompositionInstruction *instruction =
     [AVMutableVideoCompositionInstruction videoCompositionInstruction];
@@ -99,27 +113,27 @@ RCT_EXPORT_MODULE()
     AVMutableVideoCompositionLayerInstruction* layerInstruction =
     [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:videoTrack];
     instruction.layerInstructions = [NSArray arrayWithObject:layerInstruction];
-    
+
     videoComp.instructions = [NSArray arrayWithObjects: instruction];
-    
+
     // composite layer
     AVAssetExportSession *_assetExport = [[AVAssetExportSession alloc] initWithAsset:mixComposition
                                                     presetName:AVAssetExportPresetMediumQuality];
     _assetExport.videoComposition = videoComp;
-    
+
     NSString* videoName = @"test.mov";
     NSString *exportPath = [NSTemporaryDirectory() stringByAppendingPathComponent:videoName];
     NSURL *exportUrl = [NSURL fileURLWithPath:exportPath];
     _assetExport.outputFileType = AVFileTypeMPEG4;
     _assetExport.outputURL = exportUrl;
     _assetExport.shouldOptimizeForNetworkUse = YES;
-    
+
     // ファイルが存在している場合は削除
     if ([[NSFileManager defaultManager] fileExistsAtPath:exportPath])
     {
         [[NSFileManager defaultManager] removeItemAtPath:exportPath error:nil];
     }
-    
+
     // エクスポード実行
     [_assetExport exportAsynchronouslyWithCompletionHandler:
      ^(void) {
@@ -131,14 +145,20 @@ RCT_EXPORT_MODULE()
              }];
          }
     }];
-    
+
 }
+//  text:(nsstring *) text
+//               image:(uiimage *) image
+//               fontsize:(nsinteger)fontsize
+//               textcolor:(nsstring *)textcolor
+//               backgroundcolor:(nsstring *)backgroundcolor
+//               left:(nsinteger) left
+//               top:(nsinteger) top
 
 
-
-RCT_EXPORT_METHOD(embedTextOnImage:(NSString *)text :(UIImage *)img :(NSInteger *)fontSize :(NSString *)colorCode :(NSString *)backgroundColor :(NSInteger *)x :(NSInteger *)y)
+RCT_EXPORT_METHOD(embedTextOnImage:(NSString *)text :(UIImage *)img :(NSInteger *)fontSize :(NSString *)colorCode :(NSString *)backgroundColor :(NSInteger *)top :(NSInteger *)left)
 {
-    [self drawText:text inImage:img FontSize:fontSize textColor:colorCode backgroundColor:backgroundColor X:x Y:y];
+    [self Text:text Image:img FontSize:fontSize TextColor:colorCode BackgroundColor:backgroundColor Top:top Left:left ];
 }
 
 RCT_EXPORT_METHOD(embedTextOnVideo:(NSString *)text :(NSString *)videoPath :(NSInteger *)fontSize)

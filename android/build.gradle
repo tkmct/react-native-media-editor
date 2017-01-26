@@ -32,4 +32,5 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:0.20.+'
+    compile 'com.writingminds:FFmpegAndroid:0.3.2'
 }

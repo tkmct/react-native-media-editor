@@ -44,10 +44,10 @@ export default class example extends Component {
       loading: false,
       photo: null,
       video: null,
-      text: '',
+      text: 'Hello world',
       fontSize: 20,
       colorCode: '#ffffff',
-      textBackgroundColor: '#fef000'
+      textBackgroundColor: '#ff00e0'
     };
 
     this.onButtonPress = this.onButtonPress.bind(this);
@@ -57,6 +57,11 @@ export default class example extends Component {
     this.renderVideo = this.renderVideo.bind(this);
     this.renderImage = this.renderImage.bind(this);
     this.renderInput = this.renderInput.bind(this);
+    this.log = this.log.bind(this);
+  }
+
+  log() {
+    console.log(this.state);
   }
 
   onButtonPress() {
@@ -78,13 +83,23 @@ export default class example extends Component {
       }
       else {
         // You can display the image using either data...
-        const source = {uri: 'data:image/jpeg;base64,' + response.data, isStatic: true};
+        let source = {uri: 'data:image/jpeg;base64,' + response.data, isStatic: true};
 
         // or a reference to the platform specific asset location
         if (Platform.OS === 'ios') {
-          const source = {uri: response.uri.replace('file://', ''), isStatic: true};
+          source = {
+            uri: response.uri.replace('file://', ''),
+            isStatic: true,
+            width: response.width,
+            height: response.height,
+          };
         } else {
-          const source = {uri: response.uri, isStatic: true};
+          source = {
+            uri: response.uri,
+            isStatic: true,
+            width: response.width,
+            height: response.height,
+          };
         }
 
         this.setState({
@@ -100,8 +115,9 @@ export default class example extends Component {
     if (video) {
       RNMediaEditor.embedTextOnVideo(text, video.path, fontSize);
     } else if (photo) {
-      // RNMediaEditor.addTextToImage(toVerticalString(text), photo, fontSize, colorCode);
-      RNMediaEditor.embedTextOnImage(text, photo, fontSize, colorCode, textBackgroundColor, 200, 20);
+      console.log(photo); // Height, width
+      console.log('Height: ', photo.height, 'Width: ', photo.width);
+      RNMediaEditor.embedTextOnImage(text, photo, fontSize, colorCode, textBackgroundColor, 200, 300);
     }
   }
 
@@ -212,6 +228,10 @@ export default class example extends Component {
           <Button
             onPress={this.onEmbedButtonPress}
             title="Embed Text"
+          />
+          <Button
+            onPress={this.log}
+            title="Log"
           />
           { this.renderInput() }
         </View>
