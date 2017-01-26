@@ -10,14 +10,14 @@
 }
 RCT_EXPORT_MODULE()
 
-- (UIColor *)colorFromHexString:(NSString *)hexString {
+- (UIColor *)colorFromHexString:(NSString *)hexString Alpha:(float)alpha {
     unsigned rgbValue = 0;
     NSScanner *scanner = [NSScanner scannerWithString:hexString];
     [scanner setScanLocation:1]; // bypass '#' character
     [scanner scanHexInt:&rgbValue];
     return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 \
                            green:((rgbValue & 0xFF00) >> 8)/255.0 \
-                            blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+                            blue:(rgbValue & 0xFF)/255.0 alpha:alpha];
 }
 
 
@@ -27,8 +27,10 @@ RCT_EXPORT_MODULE()
               FontSize:(NSInteger)fontSize
               TextColor:(NSString *)textColor
               BackgroundColor:(NSString *)backgroundColor
+              BackgroundOpacity:(float)backgroundOpacity
               Top:(NSInteger) top
               Left:(NSInteger) left
+
 {
   // create font and size of font
   UIFont *font = [UIFont boldSystemFontOfSize:fontSize];
@@ -43,7 +45,7 @@ RCT_EXPORT_MODULE()
 
   // the base point of text rect
   CGPoint point = CGPointMake(left, top);
-  [[self colorFromHexString:backgroundColor] set];
+  [[self colorFromHexString:backgroundColor Alpha:backgroundOpacity] set];
   CGRect textContainer = CGRectMake(point.x, point.y, size.width + fontSize*2, size.height * 2);
 
   CGContextFillRect(
@@ -53,7 +55,7 @@ RCT_EXPORT_MODULE()
 
   CGRect textRect = CGRectMake(point.x + fontSize, point.y + textContainer.size.height/4, size.width, size.height);
 
-  [[self colorFromHexString:textColor] set];
+  [[self colorFromHexString:textColor Alpha:1.0] set];
   [text drawInRect:textRect
     withFont:font
     lineBreakMode:UILineBreakModeClip
@@ -147,18 +149,22 @@ RCT_EXPORT_MODULE()
     }];
 
 }
-//  text:(nsstring *) text
-//               image:(uiimage *) image
-//               fontsize:(nsinteger)fontsize
-//               textcolor:(nsstring *)textcolor
-//               backgroundcolor:(nsstring *)backgroundcolor
-//               left:(nsinteger) left
-//               top:(nsinteger) top
 
-
-RCT_EXPORT_METHOD(embedTextOnImage:(NSString *)text :(UIImage *)img :(NSInteger *)fontSize :(NSString *)colorCode :(NSString *)backgroundColor :(NSInteger *)top :(NSInteger *)left)
+RCT_EXPORT_METHOD(
+  embedTextOnImage:(NSString *)text
+  :(UIImage *)img :(NSInteger *)fontSize
+  :(NSString *)colorCode
+  :(NSString *)backgroundColor
+  :(float)backgroundOpacity
+  :(NSInteger *)top :(NSInteger *)left)
 {
-    [self Text:text Image:img FontSize:fontSize TextColor:colorCode BackgroundColor:backgroundColor Top:top Left:left ];
+    [ self
+    Text:text Image:img
+    FontSize:fontSize
+    TextColor:colorCode
+    BackgroundColor:backgroundColor
+    BackgroundOpacity: backgroundOpacity
+    Top:top Left:left ];
 }
 
 RCT_EXPORT_METHOD(embedTextOnVideo:(NSString *)text :(NSString *)videoPath :(NSInteger *)fontSize)

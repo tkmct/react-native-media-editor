@@ -117,7 +117,7 @@ export default class example extends Component {
     } else if (photo) {
       console.log(photo); // Height, width
       console.log('Height: ', photo.height, 'Width: ', photo.width);
-      RNMediaEditor.embedTextOnImage(text, photo, fontSize, colorCode, textBackgroundColor, 200, 300);
+      RNMediaEditor.embedTextOnImage(text, photo, fontSize, colorCode, textBackgroundColor, 0.5, 200, 300);
     }
   }
 
