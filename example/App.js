@@ -88,6 +88,7 @@ class App extends Component {
         if (Platform.OS === 'ios') {
           source = {
             uri: response.uri.replace('file://', ''),
+            path: response.uri.replace('file://', ''),
             isStatic: true,
             width: response.width,
             height: response.height,
@@ -95,6 +96,7 @@ class App extends Component {
         } else {
           source = {
             uri: response.uri,
+            path: response.path,
             isStatic: true,
             width: response.width,
             height: response.height,
@@ -117,14 +119,14 @@ class App extends Component {
       console.log(photo); // Height, width
       console.log('Height: ', photo.height, 'Width: ', photo.width);
       RNMediaEditor.embedTextOnImage(
-        text, photo.uri, fontSize,
+        text, photo.path, fontSize,
         colorCode, textBackgroundColor,
         0.5, 1000, 500,
         (message, path) => {
           console.log('success with response:', message, path);
         },
         (err) => {
-          console.error('error with response:', res);
+          console.error('error with response:', err);
         }
       );
     }

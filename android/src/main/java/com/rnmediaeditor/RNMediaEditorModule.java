@@ -51,7 +51,17 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
 
 
   @ReactMethod
-  public void embedTextOnImage(String text, String path, int fontSize, String fontColor, Callback successCallback, Callback errorCallback) {
+  public void embedTextOnImage(
+    String text,
+    String path,
+    int fontSize,
+    String fontColor,
+    String backgroundColor,
+    float backgroundOpacity,
+    int top,
+    int left,
+    Callback successCallback,
+    Callback errorCallback) {
     // Create image bitmap from uri
     File img = new File(path);
 
@@ -85,15 +95,16 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
       // Save into Camera Roll
       String uri = MediaStore.Images.Media.insertImage(_reactContext.getContentResolver(), bitmap, "", "");
 
-//
-//      byte[] data = buffer.array();
-//
-//
-//      File out = getOutputFile(TYPE_IMAGE);
-//
-//      writeDataToFile(data, out);
+     byte[] data = buffer.array();
 
-      successCallback.invoke(uri);
+
+     File out = getOutputFile(TYPE_IMAGE);
+
+     writeDataToFile(data, out);
+
+      successCallback.invoke(out.getAbsolutePath());
+    } else {
+      errorCallback.invoke("Input file not found with Path:" + path);
     }
   }
 
