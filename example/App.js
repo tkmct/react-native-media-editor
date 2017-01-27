@@ -116,7 +116,17 @@ class App extends Component {
     } else if (photo) {
       console.log(photo); // Height, width
       console.log('Height: ', photo.height, 'Width: ', photo.width);
-      RNMediaEditor.embedTextOnImage(text, photo.uri, fontSize, colorCode, textBackgroundColor, 0.5, 1000, 500);
+      RNMediaEditor.embedTextOnImage(
+        text, photo.uri, fontSize,
+        colorCode, textBackgroundColor,
+        0.5, 1000, 500,
+        (message, path) => {
+          console.log('success with response:', message, path);
+        },
+        (err) => {
+          console.error('error with response:', res);
+        }
+      );
     }
   }
 

@@ -23,14 +23,16 @@ RCT_EXPORT_MODULE()
 }
 
 
-- (UIImage *) Text:(NSString *) text
-              Image:(UIImage *) image
-              FontSize:(NSInteger)fontSize
-              TextColor:(NSString *)textColor
-              BackgroundColor:(NSString *)backgroundColor
-              BackgroundOpacity:(float)backgroundOpacity
-              Top:(NSInteger) top
-              Left:(NSInteger) left
+- (void)Text:(NSString *) text
+        Image:(UIImage *) image
+        FontSize:(NSInteger)fontSize
+        TextColor:(NSString *)textColor
+        BackgroundColor:(NSString *)backgroundColor
+        BackgroundOpacity:(float)backgroundOpacity
+        Top:(NSInteger) top
+        Left:(NSInteger) left
+        SuccessCallback:(RCTResponseSenderBlock) successCallback
+        ErrorCallback:(RCTResponseSenderBlock) errorCallback
 {
   // create font and size of font
   UIFont *font = [UIFont boldSystemFontOfSize:fontSize];
@@ -61,11 +63,25 @@ RCT_EXPORT_MODULE()
     lineBreakMode:UILineBreakModeClip
     alignment:UITextAlignmentLeft ];
 
+
+  // Save photo into album
   UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
   UIGraphicsEndImageContext();
   UIImageWriteToSavedPhotosAlbum(newImage, nil, nil, nil);
 
-  return newImage;
+  // Save photo into apps directory
+  if ( newImage != nil ) {
+    NSString *docDir = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+
+    // set timestamp to filename
+    NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyyMMddHHmmss"];
+
+    NSString *filePath = [NSString stringWithFormat:@"%@/%@.jpg", docDir, [dateFormatter stringFromDate:[NSDate date]]];
+    [UIImageJPEGRepresentation(newImage, 0.7f) writeToFile:filePath atomically:YES];
+
+    successCallback(@[@"Successfully video saved", filePath]);
+  }
 }
 
 
@@ -158,7 +174,11 @@ RCT_EXPORT_METHOD(
   :(NSString *)textColor
   :(NSString *)backgroundColor
   :(float)backgroundOpacity
-  :(NSInteger *)top :(NSInteger *)left)
+  :(NSInteger *)top
+  :(NSInteger *)left
+  :(RCTResponseSenderBlock) successCallback
+  :(RCTResponseSenderBlock) errorCallback
+)
 {
   // get image from path
   UIImage *image = [[UIImage alloc] initWithContentsOfFile:imagePath];
@@ -170,7 +190,11 @@ RCT_EXPORT_METHOD(
    TextColor:textColor
    BackgroundColor:backgroundColor
    BackgroundOpacity: backgroundOpacity
-   Top:top Left:left ];
+   Top:top
+   Left:left
+   SuccessCallback:successCallback
+   ErrorCallback:errorCallback
+   ];
 }
 
 RCT_EXPORT_METHOD(embedTextOnVideo:(NSString *)text :(NSString *)videoPath :(NSInteger *)fontSize)
