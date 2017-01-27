@@ -10,6 +10,5 @@ To edit video or image
 
 ## WIP
 - [ ] iOS add text on video
-- [ ] Android add text on image
 - [ ] Android add text on video
 
