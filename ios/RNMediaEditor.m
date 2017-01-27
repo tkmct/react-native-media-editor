@@ -4,6 +4,8 @@
 
 @implementation RNMediaEditor
 
+@synthesize bridge = _bridge;
+
 - (dispatch_queue_t)methodQueue
 {
     return dispatch_get_main_queue();
@@ -29,7 +31,6 @@ RCT_EXPORT_MODULE()
               BackgroundOpacity:(float)backgroundOpacity
               Top:(NSInteger) top
               Left:(NSInteger) left
-
 {
   // create font and size of font
   UIFont *font = [UIFont boldSystemFontOfSize:fontSize];
@@ -152,24 +153,29 @@ RCT_EXPORT_MODULE()
 
 RCT_EXPORT_METHOD(
   embedTextOnImage:(NSString *)text
-  :(UIImage *)img :(NSInteger *)fontSize
+  :(NSString *)imagePath
+  :(NSInteger *)fontSize
   :(NSString *)colorCode
   :(NSString *)backgroundColor
   :(float)backgroundOpacity
   :(NSInteger *)top :(NSInteger *)left)
 {
-    [ self
-    Text:text Image:img
-    FontSize:fontSize
-    TextColor:colorCode
-    BackgroundColor:backgroundColor
-    BackgroundOpacity: backgroundOpacity
-    Top:top Left:left ];
+  // get image from path
+  UIImage *image = [[UIImage alloc] initWithContentsOfFile:imagePath];
+  
+  [self
+   Text:text
+   Image:image
+   FontSize:fontSize
+   TextColor:colorCode
+   BackgroundColor:backgroundColor
+   BackgroundOpacity: backgroundOpacity
+   Top:top Left:left ];
 }
 
 RCT_EXPORT_METHOD(embedTextOnVideo:(NSString *)text :(NSString *)videoPath :(NSInteger *)fontSize)
 {
-    [self AddTextOnVideo:[NSURL URLWithString:videoPath] text:text fontSize:fontSize];
+  [self AddTextOnVideo:[NSURL URLWithString:videoPath] text:text fontSize:fontSize];
 }
 
 @end
