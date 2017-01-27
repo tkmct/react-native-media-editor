@@ -155,19 +155,19 @@ RCT_EXPORT_METHOD(
   embedTextOnImage:(NSString *)text
   :(NSString *)imagePath
   :(NSInteger *)fontSize
-  :(NSString *)colorCode
+  :(NSString *)textColor
   :(NSString *)backgroundColor
   :(float)backgroundOpacity
   :(NSInteger *)top :(NSInteger *)left)
 {
   // get image from path
   UIImage *image = [[UIImage alloc] initWithContentsOfFile:imagePath];
-  
+
   [self
    Text:text
    Image:image
    FontSize:fontSize
-   TextColor:colorCode
+   TextColor:textColor
    BackgroundColor:backgroundColor
    BackgroundOpacity: backgroundOpacity
    Top:top Left:left ];
