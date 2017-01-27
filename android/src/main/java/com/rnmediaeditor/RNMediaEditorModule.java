@@ -66,8 +66,10 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
     File img = new File(path);
 
     if (img.exists()) {
+      // create base bitmap of input file
       Bitmap bitmap = BitmapFactory.decodeFile(path);
       Bitmap.Config bitmapConfig = bitmap.getConfig();
+
       // set default config if config is none
       if (bitmapConfig == null) {
         bitmapConfig = Bitmap.Config.ARGB_8888;
@@ -75,20 +77,30 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
 
       bitmap = bitmap.copy(bitmapConfig, true);
       Canvas canvas = new Canvas(bitmap);
-      Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-      paint.setColor(Color.parseColor(fontColor));
-      // TODO set fontSize in pixel
-      paint.setTextSize((int)(12 * fontSize));
 
-      // draw text to the Center of Canvas
-      Rect bounds = new Rect();
-      paint.getTextBounds(text, 0, text.length(), bounds);
-      int x = (bitmap.getWidth() - bounds.width()) / 6;
-      int y = (bitmap.getHeight() - bounds.height()) / 5;
-      canvas.drawText(text, x , y, paint);
+      // draw text container container
+      Paint containerPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+      containerPaint.setColor(Color.parseColor(backgroundColor));
+      containerPaint.setStyle(Paint.Style.FILL);
+      int opacity = (int)(255 * backgroundOpacity);
+      containerPaint.setAlpha(opacity);
+
+      // draw text Paint
+      Paint textPaint = new Paint();
+      textPaint.setColor(Color.parseColor(fontColor));
+
+      // convert pixel to sp
+      float scaledDensity = _reactContext.getResources().getDisplayMetrics().scaledDensity;
+      textPaint.setTextSize(fontSize/scaledDensity);
+      float textSize = textPaint.getTextSize();
+      float containerWidth = textPaint.measureText(text) + textSize*2;
+
+      // draw paint in canvas
+      canvas.drawRect(left, top, left + containerWidth, top + textSize*2, containerPaint); // left, top, right, bottom
+      canvas.drawText(text, left+textSize, top+textSize * 4/3, textPaint);
+
 
       int bytes = bitmap.getByteCount();
-
       ByteBuffer buffer = ByteBuffer.allocate(bytes);
       bitmap.copyPixelsToBuffer(buffer);
 

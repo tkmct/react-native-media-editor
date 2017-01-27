@@ -121,7 +121,7 @@ class App extends Component {
       RNMediaEditor.embedTextOnImage(
         text, photo.path, fontSize,
         colorCode, textBackgroundColor,
-        0.5, 1000, 500,
+        0.5, 200, 200,
         (message, path) => {
           console.log('success with response:', message, path);
         },
