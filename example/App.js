@@ -15,14 +15,22 @@ import {
 import ImagePicker from 'react-native-image-picker';
 import RNMediaEditor from 'react-native-media-editor';
 import Video from 'react-native-video';
-import CameraView from './Camera';
 
 
 var options = {
-  title: 'Select Image',
-  storageOptions: {
-    skipBackup: true,
-    path: 'images'
+  photo: {
+    title: 'Select Image',
+    mediaType: 'photo',
+    storageOptions: {
+      skipBackup: true,
+    }
+  },
+  video: {
+    title: 'Select Video',
+    mediaType: 'video',
+    storageOptions: {
+      skipBackup: true,
+    }
   }
 };
 
@@ -39,10 +47,9 @@ class App extends Component {
     super(props);
 
     this.state = {
-      showCamera: false,
       loading: false,
-      photo: null,
-      video: null,
+      assetType: 'photo',
+      asset: null,
       text: 'Hello world',
       fontSize: 20,
       colorCode: '#ffffff',
@@ -50,7 +57,6 @@ class App extends Component {
     };
 
     this.onButtonPress = this.onButtonPress.bind(this);
-    this.onTakeVideoPress = this.onTakeVideoPress.bind(this);
     this.onEmbedButtonPress = this.onEmbedButtonPress.bind(this);
     this.renderMedia = this.renderMedia.bind(this);
     this.renderVideo = this.renderVideo.bind(this);
@@ -63,12 +69,14 @@ class App extends Component {
     console.log(this.state);
   }
 
-  onButtonPress() {
+  onButtonPress(type) {
     this.setState({
-      photo: null,
+      assetType: type,
+      asset: null,
       loading: true
     });
-    ImagePicker.launchImageLibrary(options, (response) => {
+
+    ImagePicker.launchImageLibrary(options[type], (response) => {
       console.log('Response = ', response);
 
       if (response.didCancel) {
@@ -104,7 +112,7 @@ class App extends Component {
         }
 
         this.setState({
-          photo: source,
+          asset: source,
           loading: false,
         });
       }
@@ -112,14 +120,12 @@ class App extends Component {
   }
 
   onEmbedButtonPress() {
-    const {text, subText, photo, video, fontSize, colorCode, textBackgroundColor} = this.state;
-    if (video) {
-      RNMediaEditor.embedTextOnVideo(text, video.path, fontSize);
-    } else if (photo) {
-      console.log(photo); // Height, width
-      console.log('Height: ', photo.height, 'Width: ', photo.width);
+    const {asset, assetType, text, subText, fontSize, colorCode, textBackgroundColor} = this.state;
+    if (assetType === 'video') {
+      RNMediaEditor.embedTextOnVideo(text, asset.path, fontSize);
+    } else if (assetType === 'photo') {
       RNMediaEditor.embedTextOnImage(
-        text, photo.path, fontSize,
+        text, asset.path, fontSize,
         colorCode, textBackgroundColor,
         0.5, 200, 200,
         (message, path) => {
@@ -132,17 +138,11 @@ class App extends Component {
     }
   }
 
-  onTakeVideoPress() {
-    this.setState({
-      showCamera: true
-    });
-  }
-
-
   renderMedia() {
-    if (this.state.video) {
+    const { assetType } = this.state;
+    if (assetType === 'video') {
       return this.renderVideo();
-    } else if (this.state.photo) {
+    } else if (assetType === 'photo') {
       return this.renderImage();
     } else {
       return;
@@ -150,28 +150,30 @@ class App extends Component {
   }
 
   renderVideo() {
-    console.log("Video rendered")
-    console.log(this.state);
-    return (
-      <Video
-        source={{uri: this.state.video.path}}
-        ref={ref => {
-          this.player = ref;
-        }}
-        resizeMode="cover"
-        repeat
-        rate={1.0}
-        style={styles.video}
-      />
-    )
+    if (this.state.asset) {
+      return (
+        <Video
+          source={{uri: this.state.asset.path}}
+          ref={ref => {
+            this.player = ref;
+          }}
+          resizeMode="cover"
+          repeat
+          rate={1.0}
+          style={styles.video}
+        />
+      );
+    } else {
+      return <ActivityIndicator />;
+    }
   }
 
   renderImage() {
-    if (this.state.photo) {
+    if (this.state.assetType === 'photo') {
       return (
         <Image
           style={styles.image}
-          source={this.state.photo}
+          source={this.state.asset}
         />
       )
     } else if (this.state.loading) {
@@ -214,41 +216,32 @@ class App extends Component {
   }
 
   render() {
-    if (this.state.showCamera) {
-      return (
-        <CameraView
-          endCapturing={() => {this.setState({showCamera: false})}}
-          onVideoReturned={(video) => {this.setState({video})}}
+    return (
+      <View style={styles.container}>
+        <View style={{ flex: 1 }}>
+        { this.renderMedia() }
+      </View>
+      <View style={styles.container}>
+        <Button
+          onPress={() => { this.onButtonPress('photo') }}
+          title="Pick Image"
         />
-      )
-    } else {
-      return (
-        <View style={styles.container}>
-          <View style={{ flex: 1 }}>
-          { this.renderMedia() }
-        </View>
-        <View style={styles.container}>
-          <Button
-            onPress={this.onButtonPress}
-            title="Pick Image"
-          />
-          <Button
-            onPress={this.onTakeVideoPress}
-            title="Take Video"
-          />
-          <Button
-            onPress={this.onEmbedButtonPress}
-            title="Embed Text"
-          />
-          <Button
-            onPress={this.log}
-            title="Log"
-          />
+        <Button
+          onPress={() => { this.onButtonPress('video') }}
+          title="Pick Video"
+        />
+        <Button
+          onPress={this.onEmbedButtonPress}
+          title="Embed Text"
+        />
+        <Button
+          onPress={this.log}
+          title="Log"
+        />
           { this.renderInput() }
         </View>
       </View>
     );
-    }
   }
 }
 
