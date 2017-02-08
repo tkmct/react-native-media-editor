@@ -3,13 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSAppleMusicUsageDescription</key>
-	<string>Allow access media library</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Allow use microphone</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Allow use camera</string>
+	<string>Please allow app to access media library</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Allow example to access photo library</string>
+	<string>Please allow app to access Photo Library</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
