@@ -5,4 +5,3 @@
 @interface RNMediaEditor : NSObject <RCTBridgeModule>
 
 @end
-  

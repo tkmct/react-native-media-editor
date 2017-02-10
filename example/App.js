@@ -48,7 +48,7 @@ class App extends Component {
 
     this.state = {
       loading: false,
-      assetType: 'photo',
+      assetType: 'image',
       asset: null,
       text: 'Hello world',
       fontSize: 20,
@@ -67,6 +67,7 @@ class App extends Component {
 
   log() {
     console.log(this.state);
+
   }
 
   onButtonPress(type) {
@@ -89,23 +90,22 @@ class App extends Component {
         console.log('User tapped custom button: ', response.customButton);
       }
       else {
+        console.log(response);
         // You can display the image using either data...
         let source = {uri: 'data:image/jpeg;base64,' + response.data, isStatic: true};
 
         // or a reference to the platform specific asset location
         if (Platform.OS === 'ios') {
           source = {
-            uri: response.uri.replace('file://', ''),
+            ...source,
             path: response.uri.replace('file://', ''),
-            isStatic: true,
+            assetURL: response.origURL,
             width: response.width,
             height: response.height,
           };
         } else {
           source = {
-            uri: response.uri,
             path: response.path,
-            isStatic: true,
             width: response.width,
             height: response.height,
           };
@@ -120,29 +120,55 @@ class App extends Component {
   }
 
   onEmbedButtonPress() {
-    const {asset, assetType, text, subText, fontSize, colorCode, textBackgroundColor} = this.state;
-    if (assetType === 'video') {
-      RNMediaEditor.embedTextOnVideo(text, asset.path, fontSize);
-    } else if (assetType === 'photo') {
-      RNMediaEditor.embedTextOnImage(
-        text, asset.path, fontSize,
-        colorCode, textBackgroundColor,
-        0.5, 200, 200,
-        (message, path) => {
-          console.log('success with response:', message, path);
-        },
-        (err) => {
-          console.error('error with response:', err);
-        }
-      );
-    }
+    const {uri, asset, assetType, text, subText, fontSize, colorCode, textBackgroundColor} = this.state;
+    const options = {
+      data: uri,
+      type: assetType,
+      path: asset.path,
+      left: 200,
+      top: 200,
+      backgroundOpacity: 0.5,
+      text,
+      fontSize,
+      textColor: colorCode,
+      backgroundColor: textBackgroundColor
+    };
+    RNMediaEditor.embedText(options)
+      .then(res => {
+        const data = 'data:image/jpeg;base64,' + res[1];
+        this.setState({
+          asset: {...this.state.asset, uri: data}
+        })
+        console.log(res);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+
+
+
+    // if (assetType === 'video') {
+    //   RNMediaEditor.embedTextOnVideo(text, asset.path, fontSize);
+    // } else if (assetType === 'image') {
+    //   RNMediaEditor.embedTextOnImage(
+    //     text, asset.path, fontSize,
+    //     colorCode, textBackgroundColor,
+    //     0.5, 200, 200,
+    //     (message, path) => {
+    //       console.log('success with response:', message, path);
+    //     },
+    //     (err) => {
+    //       console.error('error with response:', err);
+    //     }
+    //   );
+    // }
   }
 
   renderMedia() {
     const { assetType } = this.state;
     if (assetType === 'video') {
       return this.renderVideo();
-    } else if (assetType === 'photo') {
+    } else if (assetType === 'image') {
       return this.renderImage();
     } else {
       return;
@@ -169,7 +195,7 @@ class App extends Component {
   }
 
   renderImage() {
-    if (this.state.assetType === 'photo') {
+    if (this.state.assetType === 'image') {
       return (
         <Image
           style={styles.image}
@@ -223,7 +249,7 @@ class App extends Component {
       </View>
       <View style={styles.container}>
         <Button
-          onPress={() => { this.onButtonPress('photo') }}
+          onPress={() => { this.onButtonPress('image') }}
           title="Pick Image"
         />
         <Button
