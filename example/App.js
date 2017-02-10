@@ -201,6 +201,7 @@ class App extends Component {
         <Image
           style={styles.image}
           source={this.state.asset}
+          resizeMode={'contain'}
         />
       )
     } else if (this.state.loading) {
