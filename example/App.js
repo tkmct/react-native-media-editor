@@ -120,9 +120,10 @@ class App extends Component {
   }
 
   onEmbedButtonPress() {
-    const {uri, asset, assetType, text, subText, fontSize, colorCode, textBackgroundColor} = this.state;
+    const {asset, assetType, text, subText, fontSize, colorCode, textBackgroundColor} = this.state;
+    const data = asset.uri.replace('data:image/jpeg;base64,', '');
     const options = {
-      data: uri,
+      data,
       type: assetType,
       path: asset.path,
       left: 200,

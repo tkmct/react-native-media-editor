@@ -104,10 +104,15 @@ RCT_EXPORT_METHOD
   CGFloat top = topNumber.floatValue;
   CGFloat left = leftNumber.floatValue;
   
-  NSString *imagePath = [options objectForKey:@"path"];
+//  NSString *imagePath = [options objectForKey:@"path"];
+//  UIImage *image = [[UIImage alloc] initWithContentsOfFile:imagePath];
+
+  NSString *base64str = [options objectForKey:@"data"];
+  NSData *data = [[NSData alloc]
+                     initWithBase64EncodedString:base64str
+                     options:NSDataBase64DecodingIgnoreUnknownCharacters];
   
-//  UIImage *image = [UIImage imageWithData:[options objectForKey:@"data"]];
-  UIImage *image = [[UIImage alloc] initWithContentsOfFile:imagePath];
+  UIImage *image = [UIImage imageWithData:data];
 
   
   NSString *text = [options objectForKey:@"text"];
