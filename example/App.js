@@ -10,7 +10,8 @@ import {
   Dimensions,
   Platform,
   ActivityIndicator,
-  TextInput
+  TextInput,
+  TouchableWithoutFeedback
 } from 'react-native';
 import ImagePicker from 'react-native-image-picker';
 import RNMediaEditor from 'react-native-media-editor';
@@ -53,7 +54,8 @@ class App extends Component {
       text: 'Hello world',
       fontSize: 20,
       colorCode: '#ffffff',
-      textBackgroundColor: '#ff00e0'
+      textBackgroundColor: '#ff00e0',
+      rate: 0,
     };
 
     this.onButtonPress = this.onButtonPress.bind(this);
@@ -62,6 +64,8 @@ class App extends Component {
     this.renderVideo = this.renderVideo.bind(this);
     this.renderImage = this.renderImage.bind(this);
     this.renderInput = this.renderInput.bind(this);
+    this.playVideo = this.playVideo.bind(this);
+    this.endVideo = this.endVideo.bind(this);
     this.log = this.log.bind(this);
   }
 
@@ -176,19 +180,38 @@ class App extends Component {
     }
   }
 
+  playVideo() {
+    console.log("play video pressed");
+    this.setState({
+      rate: 1
+    });
+  }
+
+  endVideo() {
+    console.log("end video pressed");
+    this.setState({
+      rate: 0
+    });
+    this.player.seek(0);
+  }
+
   renderVideo() {
     if (this.state.asset) {
       return (
+        <TouchableWithoutFeedback
+          onPress={this.playVideo}
+        >
         <Video
           source={{uri: this.state.asset.path}}
           ref={ref => {
             this.player = ref;
           }}
+          onEnd={() => {console.log("video ended")}}
           resizeMode="cover"
-          repeat
-          rate={1.0}
+          rate={this.state.rate}
           style={styles.video}
         />
+      </TouchableWithoutFeedback>
       );
     } else {
       return <ActivityIndicator />;
