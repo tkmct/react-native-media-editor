@@ -56,6 +56,7 @@ class App extends Component {
       colorCode: '#ffffff',
       textBackgroundColor: '#ff00e0',
       rate: 0,
+      camera: false,
     };
 
     this.onButtonPress = this.onButtonPress.bind(this);
@@ -165,8 +166,27 @@ class App extends Component {
 
     } else if (assetType === 'video') {
       const options = {
-
-      }
+        path: asset.path,
+        type: assetType,
+        firstText: {
+          left: 200,
+          top: 200,
+          backgroundOpacity: 0.5,
+          text,
+          fontSize,
+          textColor: colorCode,
+          backgroundColor: textBackgroundColor,
+        },
+        secondText: {
+          left: 500,
+          top: 500,
+          backgroundOpacity: 0.5,
+          text: '石垣島',
+          fontSize,
+          textColor: colorCode,
+          backgroundColor: '#000000',
+        },
+      };
       console.log('embed text on video');
 
       RNMediaEditor.embedText(options)
