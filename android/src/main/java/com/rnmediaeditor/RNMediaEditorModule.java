@@ -48,10 +48,70 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
     return "RNMediaEditor";
   }
 
-
-
   @ReactMethod
-  public void embedTextOnImage(
+  public void embedText(final ReadableMap options, final Promise promise) {
+    String type = options.getString("type");
+    if (type.equals("image")) {
+      embedTextOnImage(options, promise);
+
+    } else if (type.equals("video")) {
+
+    } else {
+      promise.reject(["Unexpected type of asset."]);
+    }
+  }
+
+  // resolve promise with base64 string
+  private void embedTextOnImage(final ReadableMap options, final Promise promise) {
+    // create bytearray from base64 data
+    byte[] bytesData = Base64.decode(options.getString("data"), 0);
+    Bitmap bitmap = BitmapFactory.decodeByteArray(bytesData, 0, bytesData.length);
+    Bitmap.Config bitmapConfig = bitmap.getConfig();
+    if (bitmapConfig == null) {
+      bitmapConfig = Bitmap.Config.ARGB_8888;
+    }
+    bitmap = bitmap.copy(bitmapConfig, true);
+    Canvas canvas = new Canvas(bitmap);
+
+    int fontSize = options.getInt("fontSize");
+    int top = options.getInt("top");
+    int left = options.getInt("left");
+    float backgroundOpacity = (float)(options.getDouble("backgroundOpacity"));
+
+
+    // draw text container container
+    Paint containerPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    containerPaint.setColor(Color.parseColor(options.getString("backgroundColor")));
+    containerPaint.setStyle(Paint.Style.FILL);
+    int opacity = (int)(255 * backgroundOpacity);
+    containerPaint.setAlpha(opacity);
+
+    // draw text Paint
+    Paint textPaint = new Paint();
+    textPaint.setColor(Color.parseColor(options.getString("textColor")));
+
+    // convert pixel to sp
+    float scaledDensity = _reactContext.getResources().getDisplayMetrics().scaledDensity;
+    textPaint.setTextSize(fontSize/scaledDensity);
+    float textSize = textPaint.getTextSize();
+    float containerWidth = textPaint.measureText(text) + textSize*2;
+
+    // draw paint in canvas
+    canvas.drawRect(left, top, left + containerWidth, top + textSize*2, containerPaint); // left, top, right, bottom
+    canvas.drawText(options.getString("text"), left+textSize, top+textSize * 4/3, textPaint);
+
+    int bytes = bitmap.getByteCount();
+    ByteBuffer buffer = ByteBuffer.allocate(bytes);
+    bitmap.copyPixelsToBuffer(buffer);
+
+    String outputData = buffer.array();
+
+    promise.resolve(outputData);
+  }
+
+
+
+  public void embedTextOnImage1(
     String text,
     String path,
     int fontSize,

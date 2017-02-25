@@ -125,20 +125,33 @@ class App extends Component {
 
   onEmbedButtonPress() {
     const {asset, assetType, text, subText, fontSize, colorCode, textBackgroundColor} = this.state;
-    const data = asset.uri.replace('data:image/jpeg;base64,', '');
-    const options = {
-      data,
-      type: assetType,
-      path: asset.path,
-      left: 200,
-      top: 200,
-      backgroundOpacity: 0.5,
-      text,
-      fontSize,
-      textColor: colorCode,
-      backgroundColor: textBackgroundColor
-    };
-    RNMediaEditor.embedText(options)
+
+    if (assetType === 'image') {
+      const data = asset.uri.replace('data:image/jpeg;base64,', '');
+      const options = {
+        data,
+        type: assetType,
+        firstText: {
+          left: 200,
+          top: 200,
+          backgroundOpacity: 0.5,
+          text,
+          fontSize,
+          textColor: colorCode,
+          backgroundColor: textBackgroundColor,
+        },
+        secondText: {
+          left: 500,
+          top: 500,
+          backgroundOpacity: 0.5,
+          text: '石垣島',
+          fontSize,
+          textColor: colorCode,
+          backgroundColor: '#000000',
+        }
+      };
+
+      RNMediaEditor.embedText(options)
       .then(res => {
         const data = 'data:image/jpeg;base64,' + res[1];
         this.setState({
@@ -150,23 +163,21 @@ class App extends Component {
         console.log(err);
       });
 
+    } else if (assetType === 'video') {
+      const options = {
 
+      }
+      console.log('embed text on video');
 
-    // if (assetType === 'video') {
-    //   RNMediaEditor.embedTextOnVideo(text, asset.path, fontSize);
-    // } else if (assetType === 'image') {
-    //   RNMediaEditor.embedTextOnImage(
-    //     text, asset.path, fontSize,
-    //     colorCode, textBackgroundColor,
-    //     0.5, 200, 200,
-    //     (message, path) => {
-    //       console.log('success with response:', message, path);
-    //     },
-    //     (err) => {
-    //       console.error('error with response:', err);
-    //     }
-    //   );
-    // }
+      RNMediaEditor.embedText(options)
+      .then(res => {
+        console.log(res);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+    }
+
   }
 
   renderMedia() {
