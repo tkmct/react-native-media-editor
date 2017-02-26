@@ -5,6 +5,7 @@
 #import <Photos/Photos.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
+
 @interface RNMediaEditor ()
 
 @property (nonatomic, strong) NSMutableDictionary *options;
@@ -268,13 +269,20 @@ RCT_EXPORT_METHOD
   [subtitle1Text setFontSize:fontSize1];
   
 //  [subtitle1Text setFrame:CGRectMake(leftN1.integerValue, topN1.integerValue, textSize1.width + fontSize1*2, textSize1.height * 2)];
-  [subtitle1Text setFrame:CGRectMake(0, 0, size.width, 100)];
+  [subtitle1Text setFrame:CGRectMake(leftN1.integerValue, topN1.integerValue, size.width, 30)];
   [subtitle1Text setString:text1];
   [subtitle1Text setAlignmentMode:kCAAlignmentCenter];
   
   UIColor *textColor1 =
   [self colorFromHexString:[firstText objectForKey:@"textColor"] Alpha:1.0];
   [subtitle1Text setForegroundColor:[textColor1 CGColor]];
+  
+  NSNumber *backgroundOpacityNumber1 = [firstText objectForKey:@"backgroundOpacity"];
+  float alpha1 = backgroundOpacityNumber1.floatValue;
+
+  UIColor *backgroundColor1 = [self colorFromHexString:[firstText objectForKey:@"backgroundColor"] Alpha:alpha1];
+  [subtitle1Text setBackgroundColor:[backgroundColor1 CGColor]];
+  
   
   // create text2
   CATextLayer *subtitle2Text = [[CATextLayer alloc] init];
@@ -292,13 +300,21 @@ RCT_EXPORT_METHOD
   
   // TODO 文字の場所をコントロールする
   //  [subtitle1Text setFrame:CGRectMake(leftN1.integerValue, topN1.integerValue, textSize1.width + fontSize1*2, textSize1.height * 2)];
-  [subtitle2Text setFrame:CGRectMake(0, 0, size.width, 30)];
+  [subtitle2Text setFrame:CGRectMake(abs(leftN2.integerValue), abs(topN2.integerValue), size.width, 30)];
   [subtitle2Text setString:text2];
   [subtitle2Text setAlignmentMode:kCAAlignmentCenter];
   
   UIColor *textColor2 =
   [self colorFromHexString:[secondText objectForKey:@"textColor"] Alpha:1.0];
   [subtitle2Text setForegroundColor:[textColor2 CGColor]];
+  
+  NSNumber *backgroundOpacityNumber2 = [secondText objectForKey:@"backgroundOpacity"];
+  float alpha2 = backgroundOpacityNumber2.floatValue;
+  
+  UIColor *backgroundColor2 = [self colorFromHexString:[secondText objectForKey:@"backgroundColor"] Alpha:alpha2];
+  [subtitle2Text setBackgroundColor:[backgroundColor2 CGColor]];
+  
+  
   
   // create overlay
   CALayer *overlayLayer = [CALayer layer];
