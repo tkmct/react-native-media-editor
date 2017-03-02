@@ -19,12 +19,12 @@ import Video from 'react-native-video';
 
 
 var options = {
-  photo: {
+  image: {
     title: 'Select Image',
     mediaType: 'photo',
     storageOptions: {
       skipBackup: true,
-    }
+    },
   },
   video: {
     title: 'Select Video',
@@ -72,7 +72,7 @@ class App extends Component {
 
   log() {
     console.log(this.state);
-
+    console.log(RNMediaEditor);
   }
 
   onButtonPress(type) {
@@ -90,11 +90,7 @@ class App extends Component {
       }
       else if (response.error) {
         console.log('ImagePicker Error: ', response.error);
-      }
-      else if (response.customButton) {
-        console.log('User tapped custom button: ', response.customButton);
-      }
-      else {
+      } else {
         console.log(response);
         // You can display the image using either data...
         let source = {uri: 'data:image/jpeg;base64,' + response.data, isStatic: true};
@@ -110,6 +106,7 @@ class App extends Component {
           };
         } else {
           source = {
+            ...source,
             path: response.path,
             width: response.width,
             height: response.height,
@@ -131,6 +128,7 @@ class App extends Component {
       const data = asset.uri.replace('data:image/jpeg;base64,', '');
       const options = {
         data,
+        path: asset.path,
         type: assetType,
         firstText: {
           left: 200,
@@ -139,6 +137,7 @@ class App extends Component {
           text,
           fontSize,
           textColor: colorCode,
+          fontColor: colorCode,
           backgroundColor: textBackgroundColor,
         },
         secondText: {
@@ -154,11 +153,10 @@ class App extends Component {
 
       RNMediaEditor.embedText(options)
       .then(res => {
-        const data = 'data:image/jpeg;base64,' + res[1];
         this.setState({
-          asset: {...this.state.asset, uri: data}
-        })
-        console.log(res);
+          asset: {...this.state.asset, uri: 'file://' + res}
+        });
+      console.log(res);
       })
       .catch(err => {
         console.log(err);

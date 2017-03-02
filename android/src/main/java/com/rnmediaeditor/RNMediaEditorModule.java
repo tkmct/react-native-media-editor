@@ -9,12 +9,17 @@ import android.graphics.Rect;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresPermission;
+import android.support.annotation.StringDef;
 import android.util.Log;
+import android.util.Base64;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
+import com.facebook.react.bridge.Promise;
+import com.facebook.react.bridge.ReadableMap;
 import com.github.hiteshsondhi88.libffmpeg.ExecuteBinaryResponseHandler;
 import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
 import com.github.hiteshsondhi88.libffmpeg.LoadBinaryResponseHandler;
@@ -49,80 +54,20 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void embedText(final ReadableMap options, final Promise promise) {
+  public void embedText(final ReadableMap options, Promise promise) {
     String type = options.getString("type");
     if (type.equals("image")) {
+      Log.d("Example", "RNMediaeditor embed text on image called");
       embedTextOnImage(options, promise);
-
     } else if (type.equals("video")) {
-
-    } else {
-      promise.reject(["Unexpected type of asset."]);
+      embedTextOnVideo(options, promise);
     }
   }
 
-  // resolve promise with base64 string
   private void embedTextOnImage(final ReadableMap options, final Promise promise) {
-    // create bytearray from base64 data
-    byte[] bytesData = Base64.decode(options.getString("data"), 0);
-    Bitmap bitmap = BitmapFactory.decodeByteArray(bytesData, 0, bytesData.length);
-    Bitmap.Config bitmapConfig = bitmap.getConfig();
-    if (bitmapConfig == null) {
-      bitmapConfig = Bitmap.Config.ARGB_8888;
-    }
-    bitmap = bitmap.copy(bitmapConfig, true);
-    Canvas canvas = new Canvas(bitmap);
+    String path = options.getString("path");
+    ReadableMap firstText = options.getMap("firstText");
 
-    int fontSize = options.getInt("fontSize");
-    int top = options.getInt("top");
-    int left = options.getInt("left");
-    float backgroundOpacity = (float)(options.getDouble("backgroundOpacity"));
-
-
-    // draw text container container
-    Paint containerPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-    containerPaint.setColor(Color.parseColor(options.getString("backgroundColor")));
-    containerPaint.setStyle(Paint.Style.FILL);
-    int opacity = (int)(255 * backgroundOpacity);
-    containerPaint.setAlpha(opacity);
-
-    // draw text Paint
-    Paint textPaint = new Paint();
-    textPaint.setColor(Color.parseColor(options.getString("textColor")));
-
-    // convert pixel to sp
-    float scaledDensity = _reactContext.getResources().getDisplayMetrics().scaledDensity;
-    textPaint.setTextSize(fontSize/scaledDensity);
-    float textSize = textPaint.getTextSize();
-    float containerWidth = textPaint.measureText(text) + textSize*2;
-
-    // draw paint in canvas
-    canvas.drawRect(left, top, left + containerWidth, top + textSize*2, containerPaint); // left, top, right, bottom
-    canvas.drawText(options.getString("text"), left+textSize, top+textSize * 4/3, textPaint);
-
-    int bytes = bitmap.getByteCount();
-    ByteBuffer buffer = ByteBuffer.allocate(bytes);
-    bitmap.copyPixelsToBuffer(buffer);
-
-    String outputData = buffer.array();
-
-    promise.resolve(outputData);
-  }
-
-
-
-  public void embedTextOnImage1(
-    String text,
-    String path,
-    int fontSize,
-    String fontColor,
-    String backgroundColor,
-    float backgroundOpacity,
-    int top,
-    int left,
-    Callback successCallback,
-    Callback errorCallback) {
-    // Create image bitmap from uri
     File img = new File(path);
 
     if (img.exists()) {
@@ -130,6 +75,7 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
       Bitmap bitmap = BitmapFactory.decodeFile(path);
       Bitmap.Config bitmapConfig = bitmap.getConfig();
 
+      Log.d("example", "bytes:" + Integer.toString(bitmap.getByteCount()));
       // set default config if config is none
       if (bitmapConfig == null) {
         bitmapConfig = Bitmap.Config.ARGB_8888;
@@ -138,12 +84,19 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
       bitmap = bitmap.copy(bitmapConfig, true);
       Canvas canvas = new Canvas(bitmap);
 
+      String backgroundColor = firstText.getString("backgroundColor");
+      float backgroundOpacity = (float) (firstText.getDouble("backgroundOpacity"));
+
       // draw text container container
       Paint containerPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
       containerPaint.setColor(Color.parseColor(backgroundColor));
       containerPaint.setStyle(Paint.Style.FILL);
-      int opacity = (int)(255 * backgroundOpacity);
+      int opacity = (int) (255 * backgroundOpacity);
       containerPaint.setAlpha(opacity);
+
+      String fontColor = firstText.getString("fontColor");
+      int fontSize = firstText.getInt("fontSize");
+      String text = firstText.getString("text");
 
       // draw text Paint
       Paint textPaint = new Paint();
@@ -151,13 +104,16 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
 
       // convert pixel to sp
       float scaledDensity = _reactContext.getResources().getDisplayMetrics().scaledDensity;
-      textPaint.setTextSize(fontSize/scaledDensity);
+//      textPaint.setTextSize(fontSize/scaledDensity);
+      textPaint.setTextSize(fontSize);
       float textSize = textPaint.getTextSize();
-      float containerWidth = textPaint.measureText(text) + textSize*2;
+      float containerWidth = textPaint.measureText(text) + textSize * 2;
 
+      int top = firstText.getInt("top");
+      int left = firstText.getInt("left");
       // draw paint in canvas
-      canvas.drawRect(left, top, left + containerWidth, top + textSize*2, containerPaint); // left, top, right, bottom
-      canvas.drawText(text, left+textSize, top+textSize * 4/3, textPaint);
+      canvas.drawRect(left, top, left + containerWidth, top + textSize * 2, containerPaint); // left, top, right, bottom
+      canvas.drawText(text, left + textSize, top + textSize * 4 / 3, textPaint);
 
 
       int bytes = bitmap.getByteCount();
@@ -167,82 +123,17 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
       // Save into Camera Roll
       String uri = MediaStore.Images.Media.insertImage(_reactContext.getContentResolver(), bitmap, "", "");
 
-     byte[] data = buffer.array();
+      byte[] data = buffer.array();
+      String dataString = new String(data);
 
+      File out = getOutputFile(TYPE_IMAGE);
 
-     File out = getOutputFile(TYPE_IMAGE);
+      writeDataToFile(data, out);
 
-     writeDataToFile(data, out);
-
-      successCallback.invoke(out.getAbsolutePath());
-    } else {
-      errorCallback.invoke("Input file not found with Path:" + path);
+      promise.resolve(out.getAbsolutePath());
     }
   }
 
-  @ReactMethod
-  public void embedTextOnVideo(String text, String path, int fontSize, String fontColor, final Callback successCallback, final Callback errorCallback) {
-    FFmpeg ffmpeg = FFmpeg.getInstance(_reactContext);
-    try {
-      ffmpeg.loadBinary(new LoadBinaryResponseHandler() {
-
-        @Override
-        public void onStart() {}
-
-        @Override
-        public void onFailure() {}
-
-        @Override
-        public void onSuccess() {}
-
-        @Override
-        public void onFinish() {}
-      });
-    } catch (FFmpegNotSupportedException e) {
-      // Handle if FFmpeg is not supported by device
-    }
-
-    File out = getOutputFile(TYPE_VIDEO);
-
-//    String[] cmd = new String[] {
-//            "-i", path, "-vf",
-//            String.format("drawtext=\"fontfile=/systems/fonts/DroidSans.ttf: text='%s': " +
-//                    "box=1: boxcolor=black@0.5: boxborder=5: x=(w-text_w)/t: y=(h-text_h)/2\"", text),
-//            "-codec:a", "aac", out.getAbsolutePath()
-//    };
-    String[] cmd = new String[] {
-            "-i", path, "-ss", "30", "-c", "copy", "-t", "10", out.getAbsolutePath()
-    };
-
-    try {
-      // to execute "ffmpeg -version" command you just need to pass "-version"
-      ffmpeg.execute(cmd, new ExecuteBinaryResponseHandler() {
-
-        @Override
-        public void onStart() {}
-
-        @Override
-        public void onProgress(String message) {}
-
-        @Override
-        public void onFailure(String message) {
-          errorCallback.invoke("Error ffmpeg executing with message:\n\t" + message);
-        }
-
-        @Override
-        public void onSuccess(String message) {
-          successCallback.invoke("Successfully output file with message:\n\t");
-        }
-
-        @Override
-        public void onFinish() {}
-      });
-    } catch (FFmpegCommandAlreadyRunningException e) {
-      // Handle if FFmpeg is already running
-    }
-
-
-  }
 
   @Nullable
   private Throwable writeDataToFile(byte[] data, File file) {
@@ -275,7 +166,7 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
     String fileName = String.format("%s", new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()));
 
 
-    if (type == TYPE_IMAGE){
+    if (type == TYPE_IMAGE) {
       fileName = String.format("IMG_%s.jpg", fileName);
     } else if (type == TYPE_VIDEO) {
       fileName = String.format("VID_%s.mp4", fileName);
@@ -283,9 +174,83 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
       Log.e(TAG, "Unsupported media type:" + type);
       return null;
     }
+    Log.d("example", String.format("%s%s%s", storageDir.getPath(), File.separator, fileName));
 
     return new File(String.format("%s%s%s", storageDir.getPath(), File.separator, fileName));
   }
 
+
+  public void embedTextOnVideo(ReadableMap options, Promise promise) {
+    FFmpeg ffmpeg = FFmpeg.getInstance(_reactContext);
+    try {
+      ffmpeg.loadBinary(new LoadBinaryResponseHandler() {
+
+        @Override
+        public void onStart() {
+        }
+
+        @Override
+        public void onFailure() {
+        }
+
+        @Override
+        public void onSuccess() {
+        }
+
+        @Override
+        public void onFinish() {
+        }
+      });
+    } catch (FFmpegNotSupportedException e) {
+      // Handle if FFmpeg is not supported by device
+    }
+
+    String path = options.getString("path");
+    ReadableMap firstText = options.getMap("firstText");
+    String text = firstText.getString("text");
+    String fontColor = firstText.getString("textColor");
+    String backgroundColor = firstText.getString("backgroundColor");
+    int fontSize = firstText.getInt("fontSize");
+    float backgroundOpaciy = (float)firstText.getDouble("backgroundOpacity");
+    File out = getOutputFile(TYPE_VIDEO);
+
+    String[] cmd = new String[] {
+            "-i", path, "-filter_complex", "drawtext=fontfile=/system/fonts/DroidSans.ttf:text=" +
+            text + ":x=(w-text_w)/2:y=(h-text_h-line_h)/2" +":fontcolor=" + fontColor + ":fontsize=" + fontSize +
+            ":box=1:boxcolor="+backgroundColor+"@"+backgroundOpaciy+":boxborderw="+(fontSize/2), out.getAbsolutePath()
+    };
+
+    try {
+      // to execute "ffmpeg -version" command you just need to pass "-version"
+      ffmpeg.execute(cmd, new ExecuteBinaryResponseHandler() {
+
+        @Override
+        public void onStart() {
+          Log.d("example", "start ffmpeg");
+        }
+
+        @Override
+        public void onProgress(String message) {
+          Log.d("example", "onProgress: " + message);
+        }
+
+        @Override
+        public void onFailure(String message) {
+          Log.e("example", "Error ffmpeg executing with message:\n\t" + message);
+        }
+
+        @Override
+        public void onSuccess(String message) {
+          Log.d("example", "Successfully output file with message:\n\t");
+        }
+
+        @Override
+        public void onFinish() {
+        }
+      });
+    } catch (FFmpegCommandAlreadyRunningException e) {
+      // Handle if FFmpeg is already running
+    }
+  }
 
 }
