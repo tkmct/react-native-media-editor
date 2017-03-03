@@ -66,11 +66,11 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
 
   private void embedTextOnImage(final ReadableMap options, final Promise promise) {
     String path = options.getString("path");
-    ReadableMap firstText = options.getMap("firstText");
 
     File img = new File(path);
 
     if (img.exists()) {
+      ReadableMap firstText = options.getMap("firstText");
       // create base bitmap of input file
       Bitmap bitmap = BitmapFactory.decodeFile(path);
       Bitmap.Config bitmapConfig = bitmap.getConfig();
@@ -84,6 +84,7 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
       bitmap = bitmap.copy(bitmapConfig, true);
       Canvas canvas = new Canvas(bitmap);
 
+
       String backgroundColor = firstText.getString("backgroundColor");
       float backgroundOpacity = (float) (firstText.getDouble("backgroundOpacity"));
 
@@ -94,7 +95,7 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
       int opacity = (int) (255 * backgroundOpacity);
       containerPaint.setAlpha(opacity);
 
-      String fontColor = firstText.getString("fontColor");
+      String fontColor = firstText.getString("textColor");
       int fontSize = firstText.getInt("fontSize");
       String text = firstText.getString("text");
 
@@ -103,7 +104,7 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
       textPaint.setColor(Color.parseColor(fontColor));
 
       // convert pixel to sp
-      float scaledDensity = _reactContext.getResources().getDisplayMetrics().scaledDensity;
+//      float scaledDensity = _reactContext.getResources().getDisplayMetrics().scaledDensity;
 //      textPaint.setTextSize(fontSize/scaledDensity);
       textPaint.setTextSize(fontSize);
       float textSize = textPaint.getTextSize();
@@ -116,20 +117,46 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
       canvas.drawText(text, left + textSize, top + textSize * 4 / 3, textPaint);
 
 
+//      ReadableMap secondText = options.getMap("secondText");
+//      String backgroundColor2 = secondText.getString("backgroundColor");
+//      float backgroundOpacity2 = (float) (secondText.getDouble("backgroundOpacity"));
+//
+//      // draw text container container
+//      Paint containerPaint2 = new Paint(Paint.ANTI_ALIAS_FLAG);
+//      containerPaint2.setColor(Color.parseColor(backgroundColor2));
+//      containerPaint2.setStyle(Paint.Style.FILL);
+//      int opacity2 = (int) (255 * backgroundOpacity2);
+//      containerPaint2.setAlpha(opacity2);
+//
+//      String fontColor2 = secondText.getString("textColor");
+//      int fontSize2 = secondText.getInt("fontSize");
+//      String text2 = secondText.getString("text");
+//
+//      // draw text Paint
+//      Paint textPaint2 = new Paint();
+//      textPaint2.setColor(Color.parseColor(fontColor2));
+//
+//      // convert pixel to sp
+////      float scaledDensity = _reactContext.getResources().getDisplayMetrics().scaledDensity;
+////      textPaint.setTextSize(fontSize/scaledDensity);
+//      textPaint2.setTextSize(fontSize2);
+//      float textSize2 = textPaint2.getTextSize();
+//      float containerWidth2 = textPaint2.measureText(text2) + textSize2 * 2;
+//
+//      int top2 = secondText.getInt("top");
+//      int left2 = secondText.getInt("left");
+//      // draw paint in canvas
+//      canvas.drawRect(left2, top2, left2 + containerWidth2, top2 + textSize2 * 2, containerPaint2); // left, top, right, bottom
+//      canvas.drawText(text2, left2 + textSize2, top2 + textSize2 * 4 / 3, textPaint2);
+
+
       int bytes = bitmap.getByteCount();
       ByteBuffer buffer = ByteBuffer.allocate(bytes);
       bitmap.copyPixelsToBuffer(buffer);
 
-      // Save into Camera Roll
-      String uri = MediaStore.Images.Media.insertImage(_reactContext.getContentResolver(), bitmap, "", "");
-
       byte[] data = buffer.array();
-      String dataString = new String(data);
-
       File out = getOutputFile(TYPE_IMAGE);
-
       writeDataToFile(data, out);
-
       promise.resolve(out.getAbsolutePath());
     }
   }
@@ -212,12 +239,25 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
     String backgroundColor = firstText.getString("backgroundColor");
     int fontSize = firstText.getInt("fontSize");
     float backgroundOpaciy = (float)firstText.getDouble("backgroundOpacity");
+
+    ReadableMap secondText = options.getMap("secondText");
+    String text2 = secondText.getString("text");
+    String fontColor2 = secondText.getString("textColor");
+    String backgroundColor2 = secondText.getString("backgroundColor");
+    int fontSize2 = secondText.getInt("fontSize");
+    float backgroundOpaciy2 = (float)secondText.getDouble("backgroundOpacity");
+
     File out = getOutputFile(TYPE_VIDEO);
 
     String[] cmd = new String[] {
-            "-i", path, "-filter_complex", "drawtext=fontfile=/system/fonts/DroidSans.ttf:text=" +
+            "-i", path, "-filter_complex",
+            "drawtext=fontfile=/system/fonts/DroidSans.ttf:text=" +
             text + ":x=(w-text_w)/2:y=(h-text_h-line_h)/2" +":fontcolor=" + fontColor + ":fontsize=" + fontSize +
-            ":box=1:boxcolor="+backgroundColor+"@"+backgroundOpaciy+":boxborderw="+(fontSize/2), out.getAbsolutePath()
+            ":box=1:boxcolor="+backgroundColor+"@"+backgroundOpaciy+":boxborderw="+(fontSize/2),
+             "drawtext=fontfile=/system/fonts/DroidSans.ttf:text=" +
+            text2 + ":x=(w-text_w)/2:y=(h-text_h-line_h)/4" +":fontcolor=" + fontColor2 + ":fontsize=" + fontSize2 +
+            ":box=1:boxcolor="+backgroundColor2+"@"+backgroundOpaciy2+":boxborderw="+(fontSize2/2),
+            out.getAbsolutePath()
     };
 
     try {
