@@ -43,6 +43,8 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
   public static final int TYPE_IMAGE = 1;
   public static final int TYPE_VIDEO = 2;
 
+  public static Promise _promise;
+
   public RNMediaEditorModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this._reactContext = reactContext;
@@ -217,6 +219,8 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
 
 
   public void embedTextOnVideo(ReadableMap options, Promise promise) {
+    this._promise = promise;
+
     FFmpeg ffmpeg = FFmpeg.getInstance(_reactContext);
     try {
       ffmpeg.loadBinary(new LoadBinaryResponseHandler() {
@@ -259,8 +263,8 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
     File out = getOutputFile(TYPE_VIDEO);
 
     String[] cmd = new String[] {
-            "-i", path, "-filter_complex",
-            "drawtext=fontfile=/system/fonts/DroidSans.ttf:text=" +
+            "-i", path, "-c:v", "libx264", "-preset", "ultrafast", "-filter_complex",
+            "drawtext=fontfile=/system/fonts/NotoSansCJK-Regular.ttc:text=" +
             text + ":x=(w-text_w)/2:y=(h-text_h-line_h)/2" +":fontcolor=" + fontColor + ":fontsize=" + fontSize +
             ":box=1:boxcolor="+backgroundColor+"@"+backgroundOpaciy+":boxborderw="+(fontSize/2),
 //             "drawtext=fontfile=/system/fonts/DroidSans.ttf:text=" +
@@ -291,6 +295,7 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
         @Override
         public void onSuccess(String message) {
           Log.d("example", "Successfully output file with message:\n\t");
+          RNMediaEditorModule._promise.resolve("saved video output");
         }
 
         @Override
