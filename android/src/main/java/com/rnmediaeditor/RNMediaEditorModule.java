@@ -165,6 +165,8 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
       writeDataToFile(data, out);
 
       promise.resolve(out.getAbsolutePath());
+    } else {
+      promise.reject("rejected", "Data file not found");
     }
   }
 
