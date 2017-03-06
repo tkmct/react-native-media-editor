@@ -266,10 +266,10 @@ public class RNMediaEditorModule extends ReactContextBaseJavaModule {
             "-i", path, "-c:v", "libx264", "-preset", "ultrafast", "-filter_complex",
             "drawtext=fontfile=/system/fonts/NotoSansCJK-Regular.ttc:text=" +
             text + ":x=(w-text_w)/2:y=(h-text_h-line_h)/2" +":fontcolor=" + fontColor + ":fontsize=" + fontSize +
-            ":box=1:boxcolor="+backgroundColor+"@"+backgroundOpaciy+":boxborderw="+(fontSize/2),
-//             "drawtext=fontfile=/system/fonts/DroidSans.ttf:text=" +
-//            text2 + ":x=(w-text_w)/2:y=(h-text_h-line_h)/4" +":fontcolor=" + fontColor2 + ":fontsize=" + fontSize2 +
-//            ":box=1:boxcolor="+backgroundColor2+"@"+backgroundOpaciy2+":boxborderw="+(fontSize2/2),
+            ":box=1:boxcolor="+backgroundColor+"@"+backgroundOpaciy+":boxborderw="+(fontSize/2) + "," +
+            "drawtext=fontfile=/system/fonts/NotoSansCJK-Regular.ttc:text=" +
+            text2 + ":x=(w-text_w)/2:y=(h-text_h-line_h)/4" +":fontcolor=" + fontColor2 + ":fontsize=" + fontSize2 +
+            ":box=1:boxcolor="+backgroundColor2+"@"+backgroundOpaciy2+":boxborderw="+(fontSize2/2),
             out.getAbsolutePath()
     };
 
