@@ -358,18 +358,16 @@ RCT_EXPORT_METHOD
   exporter.outputFileType = AVFileTypeMPEG4;
   exporter.shouldOptimizeForNetworkUse = YES;
 
-  
   [exporter exportAsynchronouslyWithCompletionHandler:^{
-    dispatch_async(dispatch_get_main_queue(), ^{
-      if (exporter.status == AVAssetExportSessionStatusCompleted) {
-        ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
-        if ([assetsLibrary videoAtPathIsCompatibleWithSavedPhotosAlbum:exporter.outputURL]) {
-          [assetsLibrary writeVideoAtPathToSavedPhotosAlbum:exporter.outputURL completionBlock:^(NSURL *assetURL, NSError *assetError){
-            resolve(@[@"Successfully saved in library", assetURL]);
-          }];
-        }
+      ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
+      if ([assetsLibrary videoAtPathIsCompatibleWithSavedPhotosAlbum:exporter.outputURL]) {
+        [assetsLibrary writeVideoAtPathToSavedPhotosAlbum:exporter.outputURL completionBlock:^(NSURL *assetURL, NSError *assetError){
+          if (assetURL) {
+            NSLog(@"output: %@", assetURL.absoluteString);
+          }
+          resolve(@{@"path": exporter.outputURL.absoluteString, @"assetPath": assetURL.absoluteString});
+        }];
       }
-    });
   }];
 
 }
