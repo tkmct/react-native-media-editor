@@ -342,11 +342,9 @@ RCT_EXPORT_METHOD
   
   // static date formatter
   static NSDateFormatter *kDateFormatter;
-  if (!kDateFormatter) {
-    kDateFormatter = [[NSDateFormatter alloc] init];
-    kDateFormatter.dateStyle = NSDateFormatterMediumStyle;
-    kDateFormatter.timeStyle = NSDateFormatterShortStyle;
-  }
+  kDateFormatter = [[NSDateFormatter alloc] init];
+  [kDateFormatter setDateFormat:@"yyyyMMddHHmmss"];
+
   
   // export AVComposition to CameraRoll
   AVAssetExportSession *exporter = [[AVAssetExportSession alloc] initWithAsset:mixComposition presetName:AVAssetExportPresetHighestQuality];
