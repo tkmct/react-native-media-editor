@@ -139,14 +139,14 @@ RCT_EXPORT_METHOD
   [backgroundColor set];
   
   
-  CGRect textContainer = CGRectMake(point.x, point.y, size.height * 2, size.width + fontSize);
+  CGRect textContainer = CGRectMake(point.x, point.y, size.height * 2, size.width + fontSize * 2);
   
   CGContextFillRect(
                     UIGraphicsGetCurrentContext(),
                     textContainer
                     );
   
-  CGRect textRect = CGRectMake(point.x + fontSize/2, point.y + size.height / 4, size.height, size.width + fontSize/2);
+  CGRect textRect = CGRectMake(point.x + fontSize/2, point.y + size.height / 4, size.height, size.width + fontSize * 2);
   
   [textColor set];
   [text drawInRect:textRect
