@@ -146,7 +146,7 @@ RCT_EXPORT_METHOD
                     textContainer
                     );
   
-  CGRect textRect = CGRectMake(point.x + fontSize/2, point.y + textContainer.size.height/4, size.height, size.width + fontSize/2);
+  CGRect textRect = CGRectMake(point.x + fontSize/2, point.y + size.height / 4, size.height, size.width + fontSize/2);
   
   [textColor set];
   [text drawInRect:textRect
