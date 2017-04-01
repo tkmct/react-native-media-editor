@@ -134,7 +134,7 @@ class App extends Component {
           left: 200,
           top: 200,
           backgroundOpacity: 0.5,
-          text,
+          text: toVerticalString(text),
           fontSize,
           textColor: colorCode,
           backgroundColor: textBackgroundColor,
@@ -153,7 +153,7 @@ class App extends Component {
       RNMediaEditor.embedText(options)
       .then(res => {
         this.setState({
-          asset: {...this.state.asset, uri: 'file://' + res}
+          asset: {...this.state.asset, uri: 'data:image/jpeg;base64,' + res[1] }
         });
       console.log(res);
       })
